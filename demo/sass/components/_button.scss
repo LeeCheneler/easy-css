@@ -1,0 +1,7 @@
+@import "./../_settings.scss";
+.c-button {
+    display: block;
+    padding: $spacing-unit;
+    border: 1px solid $color-black;
+    width: 120px;
+}

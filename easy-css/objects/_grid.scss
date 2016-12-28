@@ -1,0 +1,68 @@
+@import "./../_settings.scss";
+@import "./../_tools.scss";
+
+@if ($use-grid) {
+    .o-grid {
+        vertical-align: top;
+
+        min-width: 100%;
+
+        @if ($use-grid-zero-font) {
+            font-size: 0px;
+        }
+    }
+
+    .o-grid--gutter {
+        margin-left: -$spacing-unit;
+    }
+
+    .o-grid--gutter > .o-grid__item {
+        padding-left: $spacing-unit;
+    }
+
+    .o-grid--trench {
+        margin-top: -$spacing-unit;
+    }
+    
+    .o-grid--trench > .o-grid__item {
+        padding-top: $spacing-unit;
+    }
+
+    .o-grid--vertical-align-top {
+        vertical-align: top;
+    }
+
+    .o-grid--vertical-align-center {
+        vertical-align: middle;
+    }
+
+    .o-grid--vertical-align-bottom {
+        vertical-align: bottom;
+    }
+
+    .o-grid--match-height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .o-grid--match-height > .o-grid__item {
+        display: flex;
+    }
+
+    /*
+        [1]Set min-height to 1px to prevent the div was collapsing when no content withing (can use empty grid items to space things out
+        [2] Combination of negative left margin and font size "hacks" to overcome inline-blck whitespacing issues. Because of global border-box box sizing this doesn't affect layout
+    */
+    .o-grid__item {
+        vertical-align: inherit;
+
+        display: inline-block;
+        min-height: 1px; // [1]
+        width: 100%;
+
+        @if ($use-grid-zero-font) { // [2]
+            margin-left: -1px;
+            font-size: $font-size-default;
+        }
+    }
+}

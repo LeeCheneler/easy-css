@@ -1,0 +1,12 @@
+{
+    "name": "easy-css",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "node-sass": "^4.0.0"
+    },
+    "scripts": {
+        "build": "node-sass ./demo/sass/main.scss demo/index.css",
+        "watch": "node-sass ./demo/sass/main.scss demo/index.css -w"
+    }
+}

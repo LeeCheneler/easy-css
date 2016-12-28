@@ -1,0 +1,10 @@
+@import "./../_settings.scss";
+
+.c-card {
+    padding: $spacing-unit;
+    border: 1px solid $color-black;
+    flex: 1;
+
+    background: $color-background-primary;
+    color: $color-white;
+}

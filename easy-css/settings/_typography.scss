@@ -1,0 +1,44 @@
+$font-family-base: arial;
+$font-family-brand: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+$letter-spacing: 0.02em;
+$heading-margin-top: $spacing-unit / 2;
+$heading-margin-bottom: $spacing-unit;
+$font-size-default: 16px;
+
+$font-sizes: (
+  h1: (
+    def: 34px,
+    xs: 34px,
+    sm: 40px
+  ),
+  h2: (
+    def: 30px,
+    xs: 30px,
+    sm: 35px
+  ),
+  h3: (
+    def: 24px,
+    xs: 24px,
+    sm: 30px
+  ),
+  h4: (
+    def: 20px,
+    xs: 20px,
+    sm: 24px
+  ),
+  h5: (
+    def: 18px,
+    xs: 18px,
+    sm: 18px
+  ),
+  h6: (
+    def: 16px,
+    xs: 16px,
+    sm: 16px
+  ),
+  def: (
+    def: $font-size-default,
+    xs: $font-size-default,
+    sm: $font-size-default
+  ) 
+);

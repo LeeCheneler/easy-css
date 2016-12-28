@@ -1,0 +1,26 @@
+@import "./../_settings.scss";
+
+@mixin respond-to($breakpoint) {
+    $max-index: str-index($breakpoint, "max-");
+    @if ($max-index == null) {
+        @if (map-has-key($breakpoints, $breakpoint) == false) {
+            @warn "Could not find key `#{$breakpoint}` in `$breakpoints` map.";
+        }
+        @else {
+            @media (min-width: #{map-get($breakpoints, $breakpoint)}) { 
+                @content;
+            }
+        }
+    }
+    @else {
+        $breakpoint: str-slice($breakpoint, 5);
+        @if (map-has-key($breakpoints, $breakpoint) == false) {
+            @warn "Could not find key `#{$breakpoint}` in `$breakpoints` map.";
+        }
+        @else {
+            @media (max-width: #{map-get($breakpoints, $breakpoint)}) { 
+                @content;
+            }
+        }
+    }
+}
