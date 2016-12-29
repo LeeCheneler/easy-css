@@ -128,7 +128,8 @@ h6 {
 /* Layout */
 /* Demo isn't whitespace stripped HTML */
 .c-card {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border: 1px solid #212121;
   flex: 1;
   background: #09f;

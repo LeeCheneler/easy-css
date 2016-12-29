@@ -1,7 +1,8 @@
 @import "./../_settings.scss";
 
 .c-card {
-    padding: $spacing-unit;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
     border: 1px solid $color-black;
     flex: 1;
 
