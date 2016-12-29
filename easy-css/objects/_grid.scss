@@ -54,6 +54,7 @@
         [2] Combination of negative left margin and font size "hacks" to overcome inline-blck whitespacing issues. Because of global border-box box sizing this doesn't affect layout
     */
     .o-grid__item {
+        position: relative;
         vertical-align: inherit;
 
         display: inline-block;
