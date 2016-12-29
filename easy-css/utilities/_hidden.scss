@@ -1,0 +1,17 @@
+@import "./../_tools.scss";
+
+.u-hidden {
+    display: none;
+
+    @include generate-all-breakpoints() {
+        display: none;
+    }
+}
+
+.u-hidden-visually {
+    visibility: hidden;
+
+    @include generate-all-breakpoints() {
+        visibility: hidden;
+    }
+}

@@ -30,7 +30,7 @@
                     <a href="#padding" class="c-button">Padding</a>
                 </div>
                 <div class="o-list__item">
-                    <a href="#alignment" class="c-button">Alignment</a>
+                    <a href="#textAlignment" class="c-button">Text Alignment</a>
                 </div>
                 <div class="o-list__item">
                     <a href="#typography" class="c-button">Typography</a>
@@ -287,7 +287,19 @@
                 </div>
             </div>
             <p>You can also use text align to align grid items.</p>
-            <div class="o-grid o-grid--gutter u-text-align-center">
+            <div class="o-grid o-grid--gutter u-text-align-left">
+                <div class="o-grid__item u-1/4 u-text-align-center">
+                    <div class="c-card">
+                        1/4
+                    </div>
+                </div>
+                <div class="o-grid__item u-1/4 u-text-align-center">
+                    <div class="c-card">
+                        1/4
+                    </div>
+                </div>
+            </div>
+            <div class="o-grid o-grid--gutter u-text-align-center u-soft-top">
                 <div class="o-grid__item u-1/4">
                     <div class="c-card">
                         1/4
@@ -300,12 +312,12 @@
                 </div>
             </div>
             <div class="o-grid o-grid--gutter u-text-align-right u-soft-top">
-                <div class="o-grid__item u-1/4">
+                <div class="o-grid__item u-1/4 u-text-align-center">
                     <div class="c-card">
                         1/2
                     </div>
                 </div>
-                <div class="o-grid__item u-1/4">
+                <div class="o-grid__item u-1/4 u-text-align-center">
                     <div class="c-card">
                         1/2
                     </div>
@@ -583,12 +595,45 @@
                 </div>
             </div>
         </section>
-        <section id="alignment" class="c-page-space">
-            <h3>Alignment</h3>
+        <section id="textAlignment" class="c-page-space">
+            <h3>Text Alignment</h3>
+            <p>Simple helper classes for text alignment.
+                <div class="c-card">
+                    <p class="u-text-align-left">Left</p>
+                    <p class="u-text-align-center"> Center</p>
+                    <p class="u-text-align-right">Right</p>
+                </div>
+        </section>
+        <section id="hidden" class="c-page-space">
+            <h3>Hidden</h3>
+            <p>You can hide elements 2 ways with 2 helper classes. One uses <strong>display:none</strong> and the other <strong>visibility:hidden</strong>.</p>
             <div class="c-card">
-                <p class="u-text-align-left">You can simply align text left,</p>
-                <p class="u-text-align-center"> center,</p>
-                <p class="u-text-align-right"> or right.</p>
+                <span class="u-hidden">Hidden</span>
+                <div>
+                    <span class="u-hidden@xs">Hidden@xs</span>
+                    <span class="u-hidden@sm">Hidden@sm</span>
+                    <span class="u-hidden@md">Hidden@md</span>
+                    <span class="u-hidden@lg">Hidden@lg</span>
+                </div>
+                <div>
+                    <span class="u-hidden@max-xs">Hidden@max-xs</span>
+                    <span class="u-hidden@max-sm">Hidden@max-sm</span>
+                    <span class="u-hidden@max-md">Hidden@max-md</span>
+                    <span class="u-hidden@max-lg">Hidden@max-lg</span>
+                </div>
+                <span class="u-hidden-visually">Hidden Visually</span>
+                <div>
+                    <span class="u-hidden-visually@xs">Hidden Visually@xs</span>
+                    <span class="u-hidden-visually@sm">Hidden Visually@sm</span>
+                    <span class="u-hidden-visually@md">Hidden Visually@md</span>
+                    <span class="u-hidden-visually@lg">Hidden Visually@lg</span>
+                </div>
+                <div>
+                    <span class="u-hidden-visually@max-xs">Hidden Visually@max-xs</span>
+                    <span class="u-hidden-visually@max-sm">Hidden Visually@max-sm</span>
+                    <span class="u-hidden-visually@max-md">Hidden Visually@max-md</span>
+                    <span class="u-hidden-visually@max-lg">Hidden Visually@max-lg</span>
+                </div>
             </div>
         </section>
         <section id="typography" class="c-page-space">
