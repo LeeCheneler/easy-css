@@ -8,8 +8,8 @@ body {
   font-family: arial;
   font-size: 16px;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   letter-spacing: 0.02em; }
   @media (min-width: 460px) {
     html,
@@ -155,7 +155,7 @@ h6 {
 .o-grid {
   vertical-align: top;
   min-width: 100%;
-  font-size: 0px; }
+  font-size: 0; }
 
 .o-grid--gutter {
   margin-left: -1rem; }
@@ -186,9 +186,9 @@ h6 {
   display: flex; }
 
 /*
-        [1]Set min-height to 1px to prevent the div was collapsing when no content withing (can use empty grid items to space things out
-        [2] Combination of negative left margin and font size "hacks" to overcome inline-blck whitespacing issues. Because of global border-box box sizing this doesn't affect layout
-    */
+      [1]Set min-height to 1px to prevent the div was collapsing when no content withing (can use empty grid items to space things out
+      [2] Combination of negative left margin and font size "hacks" to overcome inline-blck whitespacing issues. Because of global border-box box sizing this doesn't affect layout
+  */
 .o-grid__item {
   position: relative;
   vertical-align: inherit;
