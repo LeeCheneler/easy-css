@@ -169,6 +169,33 @@ h6 {
 
 /* Features */
 /* Layout */
+.o-flag {
+  display: table;
+  width: 100%; }
+
+.o-flag--align-top > .o-flag__body {
+  vertical-align: top; }
+
+.o-flag--align-bottom > .o-flag__body {
+  vertical-align: bottom; }
+
+.o-flag--reverse > .o-flag__component {
+  padding-right: 0;
+  padding-left: 1rem; }
+
+.o-flag__component,
+.o-flag__body {
+  display: table-cell;
+  vertical-align: middle; }
+
+.o-flag__body {
+  width: 100%; }
+
+.o-flag__component {
+  padding-right: 1rem; }
+
+/* Features */
+/* Layout */
 /* Features */
 /* Layout */
 /* Features */
