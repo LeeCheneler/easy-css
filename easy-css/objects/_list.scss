@@ -1,28 +1,25 @@
-@import "./../_tools.scss";
-@import "./../_settings.scss";
-
 @if($use-list) {
-    .o-list {
-        @include undo-default-list-style();
-    }
+  .o-list {
+    @include undo-default-list-style;
+  }
 
-    .o-list--inline > .o-list__item {
-        display: inline-block;
-    }
+  .o-list--inline > .o-list__item {
+    display: inline-block;
+  }
 
-    .o-list--trench {
-        margin-top: -$spacing-unit;
-    }
+  .o-list--trench {
+    margin-top: -$spacing-unit;
+  }
 
-    .o-list--trench > .o-list__item {
-        padding-top: $spacing-unit;
-    }
+  .o-list--trench > .o-list__item {
+    padding-top: $spacing-unit;
+  }
 
-    .o-list--gutter {
-        margin-left: -$spacing-unit;
-    }
+  .o-list--gutter {
+    margin-left: -$spacing-unit;
+  }
 
-    .o-list--gutter > .o-list__item {
-        padding-left: $spacing-unit;
-    }
+  .o-list--gutter > .o-list__item {
+    padding-left: $spacing-unit;
+  }
 }

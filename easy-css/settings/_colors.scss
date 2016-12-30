@@ -2,5 +2,5 @@ $color-white: #fff;
 $color-black: #212121;
 $color-blue: #09f;
 
-$color-background-primary: $color-blue; 
-$color-text-primary: $color-black;
+$color-background-primary: $color-blue !default;
+$color-text-primary: $color-black !default;

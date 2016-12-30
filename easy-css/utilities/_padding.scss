@@ -1,63 +1,61 @@
-@import "./../_settings.scss";
-
 /* Add padding */
 .u-soft {
-    padding: $spacing-unit !important;
+  padding: $spacing-unit !important;
 }
 
 .u-soft-left {
-    padding-left: $spacing-unit !important;
+  padding-left: $spacing-unit !important;
 }
 
 .u-soft-top {
-    padding-top: $spacing-unit !important;
+  padding-top: $spacing-unit !important;
 }
 
 .u-soft-right {
-    padding-right: $spacing-unit !important;
+  padding-right: $spacing-unit !important;
 }
 
 .u-soft-bottom {
-    padding-bottom: $spacing-unit !important;
+  padding-bottom: $spacing-unit !important;
 }
 
 .u-soft-sides {
-    padding-left: $spacing-unit !important;
-    padding-right: $spacing-unit !important;
+  padding-left: $spacing-unit !important;
+  padding-right: $spacing-unit !important;
 }
 
 .u-soft-ends {
-    padding-top: $spacing-unit !important;
-    padding-bottom: $spacing-unit !important;
+  padding-top: $spacing-unit !important;
+  padding-bottom: $spacing-unit !important;
 }
 
 /* Remove padding */
 .u-hard {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .u-hard-left {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .u-hard-top {
-    padding-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .u-hard-right {
-    padding-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 .u-hard-bottom {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .u-hard-sides {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .u-hard-ends {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

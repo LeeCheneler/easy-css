@@ -1,21 +1,19 @@
-@import "./_respond-to.scss";
-
 @function get-font-sizes($key) {
-    @if (map-has-key($font-sizes, $key)) {
-        @return map-get($font-sizes, $key);
-    }
-    @else {
-        @return null;
-    }
+  @if (map-has-key($font-sizes, $key)) {
+    @return map-get($font-sizes, $key);
+  }
+  @else {
+    @return null;
+  }
 }
 
 @mixin use-font($family, $sizes) {
-    font-family: $family;
-    font-size: #{map-get($sizes, "def")};
-    @include respond-to("xs") {
-        font-size: #{map-get($sizes, "xs")};
-    }    
-    @include respond-to("sm") {
-        font-size: #{map-get($sizes, "sm")};
-    }
+  font-family: $family;
+  font-size: #{map-get($sizes, 'def')};
+  @include respond-to('xs') {
+    font-size: #{map-get($sizes, 'xs')};
+  }    
+  @include respond-to('sm') {
+    font-size: #{map-get($sizes, 'sm')};
+  }
 }

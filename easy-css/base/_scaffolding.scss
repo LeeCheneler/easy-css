@@ -1,25 +1,22 @@
-@import "./../_settings.scss";
-@import "./../_tools.scss";
-
 html,
 body {
-    margin: 0;
+  margin: 0;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-base, get-font-sizes("def"));
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: $letter-spacing;
+  @include use-font($font-family-base, get-font-sizes('def'));
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: $letter-spacing;
 }
 
 
 /* Set entire site to border-box box sizing. ftw :) */
 * {
-    &,
-    &::before,
-    &::after {
-        box-sizing: border-box;
-    }
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }

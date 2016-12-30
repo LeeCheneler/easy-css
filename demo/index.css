@@ -1,13 +1,4 @@
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
+/* Demo isn't whitespace stripped HTML */
 /* Features */
 /* Layout */
 html,
@@ -33,18 +24,6 @@ body {
 *, *::before, *::after {
   box-sizing: border-box; }
 
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
 h1 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
@@ -123,18 +102,12 @@ h6 {
     h6 {
       font-size: 16px; } }
 
-/* Features */
-/* Layout */
-/* Demo isn't whitespace stripped HTML */
 .c-button {
   display: block;
   padding: 1rem;
   border: 1px solid #212121;
   width: 120px; }
 
-/* Features */
-/* Layout */
-/* Demo isn't whitespace stripped HTML */
 .c-card {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -148,27 +121,12 @@ h6 {
   .c-link > a :hover {
     text-decoration: underline; }
 
-/* Features */
-/* Layout */
-/* Demo isn't whitespace stripped HTML */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
 .c-page-space {
   padding: 1rem;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
 
-/* Features */
-/* Layout */
 .o-flag {
   display: table;
   width: 100%; }
@@ -194,18 +152,6 @@ h6 {
 .o-flag__component {
   padding-right: 1rem; }
 
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
 .o-grid {
   vertical-align: top;
   min-width: 100%;
@@ -252,18 +198,6 @@ h6 {
   margin-left: -1px;
   font-size: 16px; }
 
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
 .o-list {
   padding: 0;
   margin: 0;
@@ -285,29 +219,6 @@ h6 {
 .o-list--gutter > .o-list__item {
   padding-left: 1rem; }
 
-/* Features */
-/* Layout */
-/* Demo isn't whitespace stripped HTML */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
-/* Features */
-/* Layout */
 .u-hidden {
   display: none; }
   @media (min-width: 460px) {
@@ -362,8 +273,6 @@ h6 {
     .u-hidden-visually\@max-lg {
       visibility: hidden; } }
 
-/* Features */
-/* Layout */
 /* Add padding */
 .u-soft {
   padding: 1rem !important; }
@@ -412,8 +321,6 @@ h6 {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
 
-/* Features */
-/* Layout */
 .u-pull-1\/1 {
   left: -100%; }
   @media (min-width: 460px) {
@@ -1278,8 +1185,6 @@ h6 {
     .u-pull-9\/10\@max-lg {
       left: -90%; } }
 
-/* Features */
-/* Layout */
 .u-push-1\/1 {
   left: 100%; }
   @media (min-width: 460px) {
@@ -2153,8 +2058,6 @@ h6 {
 .u-text-align-right {
   text-align: right; }
 
-/* Features */
-/* Layout */
 .u-1\/1 {
   width: 100%; }
   @media (min-width: 460px) {

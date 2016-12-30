@@ -1,9 +1,7 @@
-@import "./../tools/_respond-to.scss";
-
 @mixin push($numerator, $denominator) {
+  left: (100% / $denominator) * $numerator;
+  
+  @include generate-all-breakpoints {
     left: (100% / $denominator) * $numerator;
-
-    @include generate-all-breakpoints() {
-        left: (100% / $denominator) * $numerator;
-    }
+  }
 }

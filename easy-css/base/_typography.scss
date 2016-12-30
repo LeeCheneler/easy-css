@@ -1,56 +1,53 @@
-@import "./../_settings.scss";
-@import "./../_tools.scss";
-
 h1 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-brand, get-font-sizes("h1"));
+  @include use-font($font-family-brand, get-font-sizes('h1'));
 }
 
 h2 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-brand, get-font-sizes("h2"));
+  @include use-font($font-family-brand, get-font-sizes('h2'));
 }
 
 h3 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-brand, get-font-sizes("h3"));
+  @include use-font($font-family-brand, get-font-sizes('h3'));
 }
 
 h4 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-brand, get-font-sizes("h4"));
+  @include use-font($font-family-brand, get-font-sizes('h4'));
 }
 
 h5 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
+  color: $color-text-primary;
 
-    @include use-font($font-family-brand, get-font-sizes("h5"));
+  @include use-font($font-family-brand, get-font-sizes('h5'));
 }
 
 h6 {
-    margin-top: $heading-margin-top;
-    margin-bottom: $heading-margin-bottom;
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
 
-    color: $color-text-primary;
-    
-    @include use-font($font-family-brand, get-font-sizes("h6"));
+  color: $color-text-primary;
+  
+  @include use-font($font-family-brand, get-font-sizes('h6'));
 }
