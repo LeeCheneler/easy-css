@@ -1,17 +1,23 @@
 {
-    "name": "easy-css",
-    "version": "1.0.0",
-    "private": true,
-    "devDependencies": {
-        "node-sass": "^4.0.0",
-        "stylelint": "^7.7.0",
-        "stylelint-config-sass-guidelines": "^1.1.0",
-        "stylelint-scss": "^1.3.4",
-        "stylelint-selector-bem-pattern": "^1.0.0"
-    },
-    "scripts": {
-        "build": "node-sass ./demo/sass/main.scss demo/index.css",
-        "watch": "node-sass ./demo/sass/main.scss demo/index.css -w",
-        "lint": "stylelint \"*/**/*.scss\" --syntax scss"
-    }
+  "name": "easy-css",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "node-sass": "^4.0.0",
+    "stylelint": "^7.7.0",
+    "stylelint-config-sass-guidelines": "^1.1.0",
+    "stylelint-scss": "^1.3.4",
+    "stylelint-selector-bem-pattern": "^1.0.0"
+  },
+  "scripts": {
+    "build": "node-sass ./demo/sass/main.scss demo/index.css && npm run autoprefix",
+    "watch": "node-sass ./demo/sass/main.scss demo/index.css -w",
+    "lint": "stylelint \"*/**/*.scss\" --syntax scss",
+    "autoprefix": "postcss -u autoprefixer -r ./demo/index.css"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
