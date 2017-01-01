@@ -1,5 +1,6 @@
 # Easy CSS
 ![Travis CI build status](https://travis-ci.org/LeeCheneler/easy-css.svg?branch=master)
+![Latest npmjs version](https://badge.fury.io/js/easy-css.svg)
 
 Easy CSS is a simple, layout only ITCSS and BEMIT SASS framework.
 
