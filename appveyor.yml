@@ -2,5 +2,5 @@
 build_script:
   - cmd: |
       npm install
-      npm install --global postcss-cli autoprefixer
+      npm install -g postcss-cli
       npm run build
