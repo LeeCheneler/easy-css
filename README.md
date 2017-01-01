@@ -1,8 +1,15 @@
 # Easy CSS
-Easy CSS is simple, layout only ITCSS and BEMIT SASS framework.
+Easy CSS is a simple, layout only ITCSS and BEMIT SASS framework.
 
-A simple ITCSS framework designed to be the initial building blocks for a website. This was mainly written as a learning exercise, it is by no means original. But it is hopefully good enough for production sites to be built on top of it!
+It is designed to be the foundation of your website's CSS. Its easy to extend and modify.
 
-Check the demo out [here](https://leecheneler.github.io/easy-css/demo/)!
+[Please check the demo out!](https://leecheneler.github.io/easy-css/demo/) Use your browsers dev tools to inspect the source and see how to use the frameworks various features.
 
-Great inspiration was taken from the nebula-css framework written by a great CSS author Robert Smith. Check it out at [here](http://rbrtsmith.com/nebula-css/).
+## Introduction to ITCSS
+
+
+## Introduction to BEMIT
+
+
+## Inspiration
+Great inspiration was taken from the [nebula-css](https://github.com/rbrtsmith/nebula-css) framework written by a great CSS author Robert Smith. He's been a great mentor throughout its development.
