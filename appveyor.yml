@@ -1,8 +1,0 @@
-branches:
-  only:
-    - appveyor
-build_script:
-  - cmd: |
-      npm install
-      npm install --global postcss-cli autoprefixer
-      npm run build
