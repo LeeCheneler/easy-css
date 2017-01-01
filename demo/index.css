@@ -17,6 +17,13 @@ body {
 *, *::before, *::after {
   box-sizing: border-box; }
 
+/* Normalize across all browsers */
+small {
+  font-size: 80%; }
+
+strong {
+  font-weight: 600; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
