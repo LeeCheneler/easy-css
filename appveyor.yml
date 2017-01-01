@@ -1,0 +1,8 @@
+version: 1.0.{build}
+before_build:
+  - cmd: |
+    npm install
+    npm install --global postcss-cli autoprefixer
+build_script:
+  - cmd: |
+    npm run build
