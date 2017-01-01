@@ -518,9 +518,7 @@ h6 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: 1px solid #212121;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   background: #09f;
   color: #fff; }
 
@@ -587,15 +585,10 @@ h6 {
   vertical-align: bottom; }
 
 .o-grid--match-height {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
 
 .o-grid--match-height > .o-grid__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
 
 /*
