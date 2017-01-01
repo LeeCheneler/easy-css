@@ -1,4 +1,6 @@
 # Easy CSS
+![Travis CI build status](https://travis-ci.org/LeeCheneler/easy-css.svg?branch=master)
+
 Easy CSS is a simple, layout only ITCSS and BEMIT SASS framework.
 
 It is designed to be the foundation of your website's CSS. Its easy to extend and modify.
