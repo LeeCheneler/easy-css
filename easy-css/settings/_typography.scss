@@ -1,10 +1,7 @@
+/* Font */
 $font-family-base: arial !default;
 $font-family-brand: 'Helvetica Neue', 'Calibri Light', Roboto, sans-serif !default;
-$letter-spacing: 0.02em !default;
-$heading-margin-top: $spacing-unit / 2 !default;
-$heading-margin-bottom: $spacing-unit !default;
 $font-size-default: 16px !default;
-
 $font-sizes: (
   h1: (
     def: 34px,
@@ -42,3 +39,8 @@ $font-sizes: (
     sm: $font-size-default
   ) 
 );
+
+/* Spacing */
+$letter-spacing: 0.02em !default;
+$heading-margin-top: $spacing-unit / 2 !default;
+$heading-margin-bottom: $spacing-unit !default;

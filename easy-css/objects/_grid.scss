@@ -4,7 +4,7 @@
 
     min-width: 100%;
 
-    @if ($use-grid-zero-font) {
+    @if ($use-grid-whitespace-html-fix) {
       font-size: 0;
     }
   }
@@ -58,7 +58,7 @@
     min-height: 1px; // [1]
     width: 100%;
 
-    @if ($use-grid-zero-font) { // [2]
+    @if ($use-grid-whitespace-html-fix) { // [2]
       margin-left: -1px;
       font-size: $font-size-default;
     }

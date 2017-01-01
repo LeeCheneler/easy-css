@@ -1,0 +1,61 @@
+/* Add margin */
+.u-push {
+  margin: $spacing-unit !important;
+}
+
+.u-push-left {
+  margin-left: $spacing-unit !important;
+}
+
+.u-push-top {
+  margin-top: $spacing-unit !important;
+}
+
+.u-push-right {
+  margin-right: $spacing-unit !important;
+}
+
+.u-push-bottom {
+  margin-bottom: $spacing-unit !important;
+}
+
+.u-push-sides {
+  margin-left: $spacing-unit !important;
+  margin-right: $spacing-unit !important;
+}
+
+.u-push-ends {
+  margin-top: $spacing-unit !important;
+  margin-bottom: $spacing-unit !important;
+}
+
+/* Remove margin */
+.u-flush {
+  margin: 0 !important;
+}
+
+.u-flush-left {
+  margin-left: 0 !important;
+}
+
+.u-flush-top {
+  margin-top: 0 !important;
+}
+
+.u-flush-right {
+  margin-right: 0 !important;
+}
+
+.u-flush-bottom {
+  margin-bottom: 0 !important;
+}
+
+.u-flush-sides {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.u-flush-ends {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

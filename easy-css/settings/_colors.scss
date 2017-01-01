@@ -1,6 +1,7 @@
-$color-white: #fff;
-$color-black: #212121;
-$color-blue: #09f;
+/* Colors */
+$color-white: #fff !default;
+$color-black: #212121 !default;
 
-$color-background-primary: $color-blue !default;
-$color-text-primary: $color-black !default;
+/* App colors */
+$color-background-base: $color-white !default;
+$color-color-base: $color-black !default;

@@ -1,6 +1,6 @@
 /* Features */
 $use-grid: true !default;
-$use-grid-zero-font: false !default; // If you are not whitespace stripping your HTML then this will need to be enabled, you can disable it if you are.
+$use-grid-whitespace-html-fix: false !default; // If you are not whitespace stripping your HTML then this will need to be enabled, you can disable it if you are.
 $use-list: true !default;
 $use-flag: true !default;
 
