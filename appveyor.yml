@@ -1,4 +1,6 @@
-
+branches:
+  only:
+    - appveyor
 build_script:
   - cmd: |
       npm install
