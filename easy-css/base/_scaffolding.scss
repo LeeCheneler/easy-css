@@ -1,8 +1,5 @@
 html,
 body {
-  background: $color-background-base;
-  color: $color-color-base;
-
   @include use-font($font-family-base, get-font-sizes('def'));
 }
 

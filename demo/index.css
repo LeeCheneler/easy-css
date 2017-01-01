@@ -1,6 +1,4 @@
 /* Demo isn't whitespace stripped HTML */
-/* Colors */
-/* App colors */
 /* Features */
 /* Layout */
 /* Font */
@@ -429,8 +427,6 @@ dd {
 
 html,
 body {
-  background: #fff;
-  color: #212121;
   font: 16px arial; }
   @media (min-width: 460px) {
     html,
@@ -508,6 +504,10 @@ h4,
 h5,
 h6 {
   margin-bottom: 1.5rem; }
+
+html,
+body {
+  color: #212121; }
 
 .c-button {
   display: block;
