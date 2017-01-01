@@ -1,6 +1,6 @@
 
 build_script:
-  - ps: |
+  - cmd: |
       npm install
       npm install --global postcss-cli autoprefixer
       npm run build
