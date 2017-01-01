@@ -12,10 +12,11 @@
     "stylelint-selector-bem-pattern": "^1.0.0"
   },
   "scripts": {
-    "build": "node-sass ./demo/sass/main.scss demo/index.css && npm run autoprefix && cleancss -o demo/index.css demo/index.css",
+    "build": "node-sass ./demo/sass/main.scss demo/index.css && npm run autoprefix && npm run clean",
     "watch": "node-sass ./demo/sass/main.scss demo/index.css -w",
     "lint": "stylelint \"*/**/*.scss\" --syntax scss",
-    "autoprefix": "postcss -u autoprefixer -r ./demo/index.css"
+    "autoprefix": "postcss -u autoprefixer -r ./demo/index.css",
+    "clean": "cleancss -o demo/index.css demo/index.css"
   },
   "browserslist": [
     "> 1%",

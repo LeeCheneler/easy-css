@@ -3,6 +3,5 @@ node_js:
   - "7"
 install:
   - npm install
-  - npm install --global postcss-cli autoprefixer
 script:
   - npm run build
