@@ -21,5 +21,24 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecheneler/easy-css.git"
+  },
+  "keywords": [
+    "css",
+    "itcss",
+    "bemit",
+    "bem",
+    "sass",
+    "oocss",
+    "grid"
+  ],
+  "author": "Lee Cheneler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leecheneler/easy-css/issues"
+  },
+  "homepage": "https://leecheneler.github.io/easy-css/demo"
 }
