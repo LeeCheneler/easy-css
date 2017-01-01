@@ -5,3 +5,11 @@ body {
 
   @include use-font($font-family-base, get-font-sizes('def'));
 }
+
+small {
+  font-size: 80%;
+}
+
+strong {
+  font-weight: 600;
+}

@@ -8,11 +8,11 @@
 }
 
 @mixin use-font($family, $sizes) {
-  font: #{map-get($sizes, 'def')}/1.5 $family;
+  font: #{map-get($sizes, 'def')} $family;
   @include respond-to('xs') {
     font-size: #{map-get($sizes, 'xs')};
   }    
   @include respond-to('sm') {
-    font: #{map-get($sizes, 'sm')}/1.5 $family;
+    font-size: #{map-get($sizes, 'sm')};
   }
 }

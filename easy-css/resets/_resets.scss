@@ -1,6 +1,6 @@
+/* Improved font rendering */
 html,
 body {
-  /* Improved font rendering */
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -16,37 +16,9 @@ body {
   }
 }
 
-
-/* Normalize across all browsers */
-small {
-  font-size: 80%;
-}
-
-strong {
-  font-weight: 600;
-}
-
-/* Remove margins from block elements */
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-form,
-article,
-aside,
-canvas,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-output,
-progress,
-section,
-video {
-  margin: 0;
+/* Consitency across all lists */
+ul,
+ol,
+dd {
+  margin-left: $spacing-unit;
 }

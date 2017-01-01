@@ -409,9 +409,9 @@ template {
 [hidden] {
   display: none; }
 
+/* Improved font rendering */
 html,
 body {
-  /* Improved font rendering */
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -421,104 +421,85 @@ body {
 *, *::before, *::after {
   box-sizing: border-box; }
 
-/* Normalize across all browsers */
+/* Consitency across all lists */
+ul,
+ol,
+dd {
+  margin-left: 1rem; }
+
+html,
+body {
+  background: #fff;
+  color: #212121;
+  font: 16px arial; }
+  @media (min-width: 460px) {
+    html,
+    body {
+      font-size: 16px; } }
+  @media (min-width: 720px) {
+    html,
+    body {
+      font-size: 16px; } }
+
 small {
   font-size: 80%; }
 
 strong {
   font-weight: 600; }
 
-/* Remove margins from block elements */
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-form,
-article,
-aside,
-canvas,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-output,
-progress,
-section,
-video {
-  margin: 0; }
-
-html,
-body {
-  background: #fff;
-  color: #212121;
-  font: 16px/1.5 arial; }
-  @media (min-width: 460px) {
-    html,
-    body {
-      font-size: 16px; } }
-  @media (min-width: 720px) {
-    html,
-    body {
-      font: 16px/1.5 arial; } }
-
 h1 {
-  font: 34px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 34px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h1 {
       font-size: 34px; } }
   @media (min-width: 720px) {
     h1 {
-      font: 40px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 40px; } }
 
 h2 {
-  font: 30px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 30px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h2 {
       font-size: 30px; } }
   @media (min-width: 720px) {
     h2 {
-      font: 35px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 35px; } }
 
 h3 {
-  font: 24px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 24px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h3 {
       font-size: 24px; } }
   @media (min-width: 720px) {
     h3 {
-      font: 30px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 30px; } }
 
 h4 {
-  font: 20px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 20px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h4 {
       font-size: 20px; } }
   @media (min-width: 720px) {
     h4 {
-      font: 24px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 24px; } }
 
 h5 {
-  font: 18px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 18px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h5 {
       font-size: 18px; } }
   @media (min-width: 720px) {
     h5 {
-      font: 18px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 18px; } }
 
 h6 {
-  font: 16px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
+  font: 16px "Helvetica Neue", "Calibri Light", Roboto, sans-serif; }
   @media (min-width: 460px) {
     h6 {
       font-size: 16px; } }
   @media (min-width: 720px) {
     h6 {
-      font: 16px/1.5 "Helvetica Neue", "Calibri Light", Roboto, sans-serif; } }
+      font-size: 16px; } }
 
 h1,
 h2,
