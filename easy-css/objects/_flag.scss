@@ -4,17 +4,44 @@
     width: 100%;
   }
 
+  @if($use-flag-responsive) {
+    @each $breakpoint in map-keys($breakpoints) {
+      .o-flag--\@#{$breakpoint} {
+        @include respond-to(#{$breakpoint}) {
+          display: block;
+          width: 100%;
+          
+          .o-flag__component,
+          .o-flag__body {
+            @include respond-to(#{$breakpoint}) {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .o-flag--\@max-#{$breakpoint} {
+        @include respond-to('max-#{$breakpoint}') {
+          display: block;
+          width: 100%;
+
+          .o-flag__component,
+          .o-flag__body {
+            @include respond-to('max-#{$breakpoint}') {
+              display: block;
+            }
+          }
+        }
+      }    
+    }
+  }
+
   .o-flag--align-top > .o-flag__body {
     vertical-align: top;
   }
 
   .o-flag--align-bottom > .o-flag__body {
     vertical-align: bottom;
-  }
-
-  .o-flag--reverse > .o-flag__component {
-    padding-right: 0;
-    padding-left: $spacing-unit;
   }
 
   .o-flag__component,
@@ -25,9 +52,5 @@
 
   .o-flag__body {
     width: 100%;
-  }
-
-  .o-flag__component {
-    padding-right: $spacing-unit;
   }
 }
