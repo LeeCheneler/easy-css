@@ -1,55 +1,40 @@
 @if($use-flag) {
   .o-flag {
     display: table;
-    width: 100%;
+    width: 100%;   
+  
+    .o-flag__component,
+    .o-flag__body {
+      display: table-cell;
+      vertical-align: middle;
+    } 
   }
 
   @if($use-flag-responsive) {
     @each $breakpoint in map-keys($breakpoints) {
-      .o-flag--\@#{$breakpoint} {
-        @include respond-to(#{$breakpoint}) {
-          display: block;
+      .o-flag\@#{$breakpoint} {
+        @include respond-to('#{$breakpoint}') {
+          display: table;
           width: 100%;
-          
+  
           .o-flag__component,
           .o-flag__body {
-            @include respond-to(#{$breakpoint}) {
-              display: block;
-            }
+            display: table-cell;
+            vertical-align: middle;
           }
         }
       }
-
-      .o-flag--\@max-#{$breakpoint} {
-        @include respond-to('max-#{$breakpoint}') {
-          display: block;
-          width: 100%;
-
-          .o-flag__component,
-          .o-flag__body {
-            @include respond-to('max-#{$breakpoint}') {
-              display: block;
-            }
-          }
-        }
-      }    
     }
   }
 
-  .o-flag--align-top > .o-flag__body {
+  .o-flag--align-top > .o-flag__body .o-flag__component {
     vertical-align: top;
   }
 
-  .o-flag--align-bottom > .o-flag__body {
+  .o-flag--align-bottom > .o-flag__body .o-flag__component {
     vertical-align: bottom;
   }
-
-  .o-flag__component,
-  .o-flag__body {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
+  
   .o-flag__body {
     width: 100%;
   }
