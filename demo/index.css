@@ -427,7 +427,8 @@ dd {
 
 html,
 body {
-  font: 16px arial; }
+  font: 16px arial;
+  line-height: 1.5; }
   @media (min-width: 460px) {
     html,
     body {
@@ -523,9 +524,9 @@ body {
   color: #fff; }
 
 .c-code-snippet {
-  background-color: #ccc;
   border-left: 1px solid #aaa;
-  border-top: 1px solid #aaa; }
+  border-top: 1px solid #aaa;
+  background-color: #ddd; }
 
 .c-link > a {
   text-decoration: none; }
