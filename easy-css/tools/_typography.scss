@@ -1,5 +1,5 @@
 @function get-font-sizes($key) {
-  @if (map-has-key($font-sizes, $key)) {
+  @if map-has-key($font-sizes, $key) {
     @return map-get($font-sizes, $key);
   }
   @else {
