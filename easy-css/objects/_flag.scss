@@ -1,4 +1,4 @@
-@if($use-flag) {
+@if $use-flag {
   .o-flag {
     display: table;
     width: 100%;
@@ -11,16 +11,27 @@
         width: 100%;
       }
     }
+
+    .o-flag\@#{$breakpoint} > .o-flag__component,
+    .o-flag\@#{$breakpoint} > .o-flag__body {
+      @include respond-to('#{$breakpoint}') {
+        display: table-cell;
+      }
+    }
   }
 
-  :not([class^='ln-o-flag\@']) > .o-flag__component,
-  :not([class^='ln-o-flag\@']) > .o-flag__body {
+  :not([class^='o-flag\@']) > .o-flag__component,
+  :not([class^='o-flag\@']) > .o-flag__body {
     display: table-cell;
   }
 
   .o-flag__component,
   .o-flag__body {
     vertical-align: middle;
+  }
+
+  .o-flag__body {
+    width: 100%;
   }
 
   .o-flag--align-top {
@@ -31,7 +42,7 @@
     vertical-align: bottom;
   }
 
-  .o-flag__body {
-    width: 100%;
+  .o-flag--no-wrap {
+    white-space: nowrap;
   }
 }

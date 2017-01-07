@@ -1,4 +1,4 @@
-@if($use-list) {
+@if $use-list {
   .o-list {
     @include undo-default-list-style;
   }

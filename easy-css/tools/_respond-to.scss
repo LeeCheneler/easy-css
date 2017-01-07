@@ -1,8 +1,8 @@
 @mixin respond-to($breakpoint) {
   $max-index: str-index($breakpoint, 'max-');
 
-  @if ($max-index == null) {
-    @if (map-has-key($breakpoints, $breakpoint) == false) {
+  @if $max-index == null {
+    @if map-has-key($breakpoints, $breakpoint) == false {
       @warn 'Could not find key `#{$breakpoint}` in `$breakpoints` map.';
     }
     
@@ -12,7 +12,7 @@
   }
   @else {
     $breakpoint: str-slice($breakpoint, 5);
-    @if (map-has-key($breakpoints, $breakpoint) == false) {
+    @if map-has-key($breakpoints, $breakpoint) == false {
       @warn 'Could not find key `#{$breakpoint}` in `$breakpoints` map.';
     }
 
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin generate-all-breakpoints() {
+@mixin generate-all-breakpoints {
   &\@xs {
     @include respond-to('xs') {
       @content;
