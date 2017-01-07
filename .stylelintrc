@@ -8,6 +8,10 @@
     "stylelint-selector-bem-pattern"
   ],
   "rules": {
+    "max-nesting-depth": [ 1, {
+      ignore: ["at-rules-without-declaration-blocks"],
+      ignoreAtRules: ["/^include$/", "/^if$/", "/^each$/"]
+    }],
     "selector-class-pattern": "",
     "declaration-block-properties-order": [],
     "selector-no-qualifying-type": [ true, {

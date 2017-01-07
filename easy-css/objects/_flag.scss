@@ -1,8 +1,8 @@
 @if($use-flag) {
   .o-flag {
     display: table;
-    width: 100%;   
-  
+    width: 100%;
+
     .o-flag__component,
     .o-flag__body {
       display: table-cell;
@@ -10,18 +10,16 @@
     } 
   }
 
-  @if($use-flag-responsive) {
-    @each $breakpoint in map-keys($breakpoints) {
-      .o-flag\@#{$breakpoint} {
-        @include respond-to('#{$breakpoint}') {
-          display: table;
-          width: 100%;
-  
-          .o-flag__component,
-          .o-flag__body {
-            display: table-cell;
-            vertical-align: middle;
-          }
+  @each $breakpoint in map-keys($breakpoints) {
+    .o-flag\@#{$breakpoint} {
+      @include respond-to('#{$breakpoint}') {
+        display: table;
+        width: 100%;
+
+        .o-flag__component,
+        .o-flag__body {
+          display: table-cell;
+          vertical-align: middle;
         }
       }
     }
@@ -34,7 +32,7 @@
   .o-flag--align-bottom > .o-flag__body .o-flag__component {
     vertical-align: bottom;
   }
-  
+
   .o-flag__body {
     width: 100%;
   }
