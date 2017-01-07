@@ -1,6 +1,6 @@
 {
   "name": "easy-css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "clean-css": "^3.4.0",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "node-sass ./demo/sass/main.scss demo/index.css && npm run autoprefix && npm run clean",
-    "watch": "node-sass ./demo/sass/main.scss demo/index.css -w",
+    "watch": "npm run build && node-sass ./demo/sass/main.scss demo/index.css -w",
     "lint": "stylelint \"*/**/*.scss\" --syntax scss",
     "autoprefix": "postcss -u autoprefixer -r ./demo/index.css",
     "clean": "cleancss -o demo/index.css demo/index.css"

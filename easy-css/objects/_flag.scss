@@ -34,15 +34,17 @@
     width: 100%;
   }
 
-  .o-flag--align-top {
+  .o-flag__component--align-top,
+  .o-flag__body--align-top {
     vertical-align: top;
   }
 
-  .o-flag--align-bottom {
+  .o-flag__component--align-bottom,
+  .o-flag__body--align-bottom {
     vertical-align: bottom;
   }
 
-  .o-flag--no-wrap {
+  .o-flag__component--no-wrap {
     white-space: nowrap;
   }
 }

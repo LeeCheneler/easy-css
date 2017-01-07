@@ -1,0 +1,9 @@
+$border: 1px solid #aaa;
+$background: #ddd;
+
+.c-code-snippet {
+  border-left: $border;
+  border-top: $border;
+
+  background-color: $background;
+}

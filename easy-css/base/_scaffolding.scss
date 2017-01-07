@@ -1,6 +1,7 @@
 html,
 body {
   @include use-font($font-family-base, get-font-sizes('def'));
+  line-height: $line-height;
 }
 
 small {
