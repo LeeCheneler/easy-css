@@ -1,32 +1,39 @@
 /* Add padding */
 .u-soft {
   padding: $spacing-unit !important;
+  @include generate-offsets('padding');
 }
 
 .u-soft-left {
   padding-left: $spacing-unit !important;
+  @include generate-offsets('padding-left');
 }
 
 .u-soft-top {
   padding-top: $spacing-unit !important;
+  @include generate-offsets('padding-top');
 }
 
 .u-soft-right {
   padding-right: $spacing-unit !important;
+  @include generate-offsets('padding-right');
 }
 
 .u-soft-bottom {
   padding-bottom: $spacing-unit !important;
+  @include generate-offsets('padding-bottom');
 }
 
 .u-soft-sides {
   padding-left: $spacing-unit !important;
   padding-right: $spacing-unit !important;
+  @include generate-offsets('padding-left', 'padding-right');
 }
 
 .u-soft-ends {
   padding-top: $spacing-unit !important;
   padding-bottom: $spacing-unit !important;
+  @include generate-offsets('padding-top', 'padding-bottom');
 }
 
 /* Remove padding */

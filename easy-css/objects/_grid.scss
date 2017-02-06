@@ -11,19 +11,25 @@
 
   .o-grid--gutter {
     margin-left: -$spacing-unit;
+    @include generate-inverted-offsets('margin-left');
   }
 
   .o-grid--gutter > .o-grid__item {
     padding-left: $spacing-unit;
   }
 
+  @include generate-grid-item-offsets('gutter', 'padding-left');
+
   .o-grid--trench {
     margin-top: -$spacing-unit;
+    @include generate-inverted-offsets('margin-top');
   }
 
   .o-grid--trench > .o-grid__item {
     padding-top: $spacing-unit;
   }
+  
+  @include generate-grid-item-offsets('trench', 'padding-top');
 
   .o-grid--vertical-align-top {
     vertical-align: top;
