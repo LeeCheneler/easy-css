@@ -1,0 +1,29 @@
+@mixin generate-offsets($properties...) {
+  @each $offset in map-keys($spacing-offsets) {
+    &-#{$offset} {
+      @each $property in $properties {
+        #{$property}: map-get($spacing-offsets, $offset) !important;
+      }
+    }
+  }
+}
+
+@mixin generate-inverted-offsets($properties...) {
+  @each $offset in map-keys($spacing-offsets) {
+    &-#{$offset} {
+      @each $property in $properties {
+        #{$property}: - map-get($spacing-offsets, $offset) !important;
+      }
+    }
+  }
+}
+
+@mixin generate-grid-item-offsets($selector-modifier, $properties...) {
+  @each $offset in map-keys($spacing-offsets) {
+    .o-grid--#{$selector-modifier}-#{$offset} > .o-grid__item {
+      @each $property in $properties {
+        #{$property}: map-get($spacing-offsets, $offset) !important;
+      }
+    }
+  }
+}
