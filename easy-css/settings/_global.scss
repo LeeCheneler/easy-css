@@ -6,6 +6,16 @@ $use-flag: true !default;
 
 /* Layout */
 $spacing-unit: 1rem !default;
+$spacing-unit-xs: $spacing-unit * 0.25;
+$spacing-unit-sm: $spacing-unit * 0.5;
+$spacing-unit-lg: $spacing-unit * 2;
+
+$spacing-offsets: (
+  xs: $spacing-unit-xs,
+  sm: $spacing-unit-sm,
+  md: $spacing-unit,
+  lg: $spacing-unit-lg
+) !default;
 
 $breakpoints: (
   xs: 460px,
