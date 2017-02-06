@@ -27,3 +27,13 @@
     }
   }
 }
+
+@mixin generate-list-item-offsets($selector-modifier, $properties...) {
+  @each $offset in map-keys($spacing-offsets) {
+    .o-list--#{$selector-modifier}-#{$offset} > .o-list__item {
+      @each $property in $properties {
+        #{$property}: map-get($spacing-offsets, $offset) !important;
+      }
+    }
+  }
+}
