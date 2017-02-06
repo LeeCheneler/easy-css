@@ -20,7 +20,7 @@
 
   .o-list--gutter {
     margin-left: -$spacing-unit;
-    @include generate-inverted-offsets('gutter-left');
+    @include generate-inverted-offsets('margin-left');
   }
 
   .o-list--gutter > .o-list__item {
