@@ -22,11 +22,24 @@ h6 {
   @include use-font($font-family-brand, get-font-sizes('h6'));
 }
 
-h1,
-h2,
+h1 {
+  margin-top: $spacing-unit-lg;
+  margin-bottom: $spacing-unit-lg;
+}
+
+h2 {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
 h3,
-h4,
+h4 {
+  margin-top: $spacing-unit-sm;
+  margin-bottom: $spacing-unit-sm;
+}
+
 h5,
 h6 {
-  margin-bottom: $spacing-unit * 1.5;
+  margin-top: $spacing-unit-xs;
+  margin-bottom: $spacing-unit-xs;
 }
