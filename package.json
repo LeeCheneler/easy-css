@@ -1,6 +1,6 @@
 {
   "name": "easy-css",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "clean-css": "^3.4.0",

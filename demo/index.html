@@ -49,8 +49,8 @@
         In turn this means that you don't need to use floats push and pull elements and rendering lists in a grid is much
         easier.
       </p>
-            <h5>Example</h5>
-        <pre class="c-code-snippet">
+      <h5>Example</h5>
+      <pre class="c-code-snippet">
 &lt;div class="o-grid"&gt;
   &lt;div class="o-grid__item u-1/3"&gt;
     Grid item
@@ -506,7 +506,7 @@
           </div>
         </div>
       </div>
-      <p>You can also use text align to align grid items. There are helper classes such as 
+      <p>You can also use text align to align grid items. There are helper classes such as
         <code class="c-code-snippet">.u-text-align-right</code> within Easy CSS (detailed <a href="#utilities">here</a>).</p>
       <div class="o-grid o-grid--gutter u-text-align-left">
         <div class="o-grid__item u-1/4 u-text-align-center">
@@ -645,9 +645,10 @@
     <section id="list" class="c-page-space u-hard-top">
       <h3>List</h3>
       <p>Lists are defined in the DOM in a similar pattern to the above grid. You create a list item; <code class="c-code-snippet">&lt;ul class="o-list"&gt;</code>.
-      And you create list items like; <code class="c-code-snippet">&lt;li class="o-list__item"&gt;</code>. By default a list will have all of its styling stripped.</p>
+        And you create list items like; <code class="c-code-snippet">&lt;li class="o-list__item"&gt;</code>. By default a
+        list will have all of its styling stripped.</p>
       <h5>Example</h5>
-        <pre class="c-code-snippet">
+      <pre class="c-code-snippet">
 &lt;ul class="o-list"&gt;
   &lt;li class="o-list__item"&gt;
     List item
@@ -713,7 +714,7 @@
             List item
           </li>
         </ul>
-      </div>      
+      </div>
       <p><code class="c-code-snippet">.o-list--trench or o-list--trench-md</code></p>
       <div class="c-card">
         <ul class="o-list o-list--trench">
@@ -797,7 +798,7 @@
             List item
           </li>
         </ul>
-      </div>      
+      </div>
       <p><code class="c-code-snippet">.o-list--gutter or o-list--gutter-md</code></p>
       <div class="c-card">
         <ul class="o-list o-list--inline o-list--gutter">
@@ -829,13 +830,14 @@
     </section>
     <section id="flag" class="c-page-space">
       <h3>Flag</h3>
-      <p>Flags allow you to align content left and right, with a component taking up the room it needs, then the body stretching to fill
-        the remaining space. By default the body and component are vertically center aligned. To define a flag you first create a block element 
-        and give it the class; <code class="c-code-snippet">.o-flag</code>. Then you place two elements within the flag element and give them the
-        <code class="c-code-snippet">.o-flag__component</code> and <code class="c-code-snippet">.o-flag__body</code> classes depending on what order 
-        you want them to appear.</p>
-        <h5>Example</h5>
-        <pre class="c-code-snippet">
+      <p>Flags allow you to align content left and right, with a component taking up the room it needs, then the body stretching
+        to fill the remaining space. By default the body and component are vertically center aligned. To define a flag you
+        first create a block element and give it the class; <code class="c-code-snippet">.o-flag</code>. Then you place two
+        elements within the flag element and give them the
+        <code class="c-code-snippet">.o-flag__component</code> and <code class="c-code-snippet">.o-flag__body</code> classes
+        depending on what order you want them to appear.</p>
+      <h5>Example</h5>
+      <pre class="c-code-snippet">
 &lt;div class="o-flag"&gt;
   &lt;div class="o-flag__component"&gt;
     &lt;img src="some-image.png" /&gt;
@@ -922,9 +924,9 @@
           </div>
         </div>
       </div>
-      <p>There are also responsive flags that will stack at certain breakpoints. You build them exactly like you do any other flag, 
-        but you define at what screen size they start to be a flag, below that screen size they will display the body and component as blocks. 
-        The responsive flag classes that replace the <code class="c-code-snippet">.o-flag</code> class are <code class="c-code-snippet">.o-flag@xs .o-flag@sm .o-flag@md .o-flag@lg</code>.</p>
+      <p>There are also responsive flags that will stack at certain breakpoints. You build them exactly like you do any other
+        flag, but you define at what screen size they start to be a flag, below that screen size they will display the body
+        and component as blocks. The responsive flag classes that replace the <code class="c-code-snippet">.o-flag</code>        class are <code class="c-code-snippet">.o-flag@xs .o-flag@sm .o-flag@md .o-flag@lg</code>.</p>
       <div class="o-list o-list--trench">
         <div class="o-list__item">
           <div class="c-card u-hard-ends">
@@ -983,13 +985,13 @@
         <h3>Utilities</h3>
         There are bunch of useful utilities included with Easy CSS.
         <h4>Responsive Classes</h4>
-        Some classes have responsive variants. Easy CSS follows a common approach to responsive classes. Classes that have responsive variants are the 
-        <code class="c-code-snippet">.o-flag .u-{insert fraction}</code>. The responsive breakpoints are the following: 
-        <code class="c-code-snippet">@xs @sm @md @lg @max-xs @max-sm @max-md @max-lg</code> The breakpoints <code class="c-code-snippet">@xs @sm @md @lg</code>
-        apply the style above the breakpoint. The breakpoints <code class="c-code-snippet">@max-xs @max-sm @max-md @max-lg</code> apply the style up to the breakpoint. 
+        Some classes have responsive variants. Easy CSS follows a common approach to responsive classes. Classes that have responsive
+        variants are the
+        <code class="c-code-snippet">.o-flag .u-{insert fraction}</code>. The responsive breakpoints are the following:
+        <code class="c-code-snippet">@xs @sm @md @lg @max-xs @max-sm @max-md @max-lg</code> The breakpoints <code class="c-code-snippet">@xs @sm @md @lg</code>        apply the style above the breakpoint. The breakpoints <code class="c-code-snippet">@max-xs @max-sm @max-md @max-lg</code>        apply the style up to the breakpoint.
         <h4>Widths</h4>
-        <p>You can set the percentage width of elements easily using fraction classes, the following are the available fractions and you apply them with 
-          classes like this <code class="c-code-snippet">.u-1/2 .u-1/3 .u-1/4</code></p>
+        <p>You can set the percentage width of elements easily using fraction classes, the following are the available fractions
+          and you apply them with classes like this <code class="c-code-snippet">.u-1/2 .u-1/3 .u-1/4</code></p>
         <div class="u-1/1">
           <div class="c-card">
             1/1
@@ -1040,8 +1042,8 @@
             1/10
           </div>
         </div>
-        <p>You can define width breakpoints easily using @breakpoint syntax. This is powerful when combined with the grid.
-          You use them with classes like this <code class="c-code-snippet">.u-1/2@xs .u-1/3@md .u-1/4@max-lg</code></p>
+        <p>You can define width breakpoints easily using @breakpoint syntax. This is powerful when combined with the grid. You
+          use them with classes like this <code class="c-code-snippet">.u-1/2@xs .u-1/3@md .u-1/4@max-lg</code></p>
         <div class="o-grid o-grid--gutter o-grid--trench">
           <div class="o-grid__item u-1/2@sm">
             <div class="c-card">
@@ -1205,7 +1207,7 @@
               </div>
             </div>
           </div>
-        </div>        
+        </div>
         <p>There are multiple offsets for margin</p>
         <div class="o-list o-list--inline o-list--gutter o-list--trench">
           <div class="o-list__item">
@@ -1251,8 +1253,7 @@
           Right
         </div>
         <h4>Visually Hidden</h4>
-        <p>You can hide elements visually and their space will still appear in the DOM using the <code class="c-code-snippet">.u-hidden-visually</code> class.
-        It also has responsive versions using the all the responsive breakpoints outlined above.</p>
+        <p>You can hide elements visually and their space will still appear in the DOM using the <code class="c-code-snippet">.u-hidden-visually</code>          class. It also has responsive versions using the all the responsive breakpoints outlined above.</p>
         <div class="c-card">
           <span class="u-hidden-visually">Hidden Visually</span>
           <div>
@@ -1269,8 +1270,7 @@
           </div>
         </div>
         <h4>Hidden</h4>
-        <p>You can hide elements fully so their space will collapse in the DOM using the <code class="c-code-snippet">.u-hidden</code> class.
-        It also has responsive versions using the all the responsive breakpoints outlined above.</p>
+        <p>You can hide elements fully so their space will collapse in the DOM using the <code class="c-code-snippet">.u-hidden</code>          class. It also has responsive versions using the all the responsive breakpoints outlined above.</p>
         <div class="c-card">
           <span class="u-hidden">Hidden</span>
           <div>
@@ -1299,6 +1299,26 @@
           <h5>Heading 5</h5>
           <h6>Heading 6</h6>
           <p>Default (span, p, the rest)</p>
+        </div>
+      </section>
+      <section id="display" class="c-page-space">
+        <h3>Display inline</h3>
+        <div>
+          <div class="c-card u-display-inline">
+            u-display-inline
+          </div>
+          <div class="c-card u-display-inline">
+            u-display-inline
+          </div>
+        </div>
+        <h3>Display inline-block</h3>
+        <div>
+          <div class="c-card u-display-inline-block">
+            u-display-inline-block
+          </div>
+          <div class="c-card u-display-inline-block">
+            u-display-inline-block
+          </div>
         </div>
       </section>
   </body>
