@@ -1,72 +1,22 @@
-@mixin respond-to($breakpoint) {
+@mixin ea-respond-to($breakpoint) {
   $max-index: str-index($breakpoint, 'max-');
 
   @if $max-index == null {
-    @if map-has-key($breakpoints, $breakpoint) == false {
+    @if map-has-key($ea-breakpoints, $breakpoint) == false {
       @warn 'Could not find key `#{$breakpoint}` in `$breakpoints` map.';
     }
     
-    @media (min-width: #{map-get($breakpoints, $breakpoint)}) { 
+    @media (min-width: #{map-get($ea-breakpoints, $breakpoint)}) { 
       @content;
     }
   }
   @else {
     $breakpoint: str-slice($breakpoint, 5);
-    @if map-has-key($breakpoints, $breakpoint) == false {
+    @if map-has-key($ea-breakpoints, $breakpoint) == false {
       @warn 'Could not find key `#{$breakpoint}` in `$breakpoints` map.';
     }
 
-    @media (max-width: #{map-get($breakpoints, $breakpoint)}) { 
-      @content;
-    }
-  }
-}
-
-@mixin generate-all-breakpoints {
-  &\@xs {
-    @include respond-to('xs') {
-      @content;
-    }
-  }
-
-  &\@sm {
-    @include respond-to('sm') {
-      @content;
-    }
-  }
-
-  &\@md {
-    @include respond-to('md') {
-      @content;
-    }
-  }
-
-  &\@lg {
-    @include respond-to('lg') {
-      @content;
-    }
-  }
-
-  &\@max-xs {
-    @include respond-to('max-xs') {
-      @content;
-    }
-  }
-
-  &\@max-sm {
-    @include respond-to('max-sm') {
-      @content;
-    }
-  }
-
-  &\@max-md {
-    @include respond-to('max-md') {
-      @content;
-    }
-  }
-
-  &\@max-lg {
-    @include respond-to('max-lg') {
+    @media (max-width: #{map-get($ea-breakpoints, $breakpoint)}) { 
       @content;
     }
   }

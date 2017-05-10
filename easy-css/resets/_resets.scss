@@ -4,7 +4,7 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: $letter-spacing;
+  letter-spacing: $ea-letter-spacing;
 }
 
 /* Set entire site to border-box box sizing. ftw :) */
@@ -20,5 +20,5 @@ body {
 ul,
 ol,
 dd {
-  margin-left: $spacing-unit;
+  margin-left: $ea-spacing-unit;
 }

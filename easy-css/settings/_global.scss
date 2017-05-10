@@ -1,27 +1,55 @@
 /* Features */
-$use-grid: true !default;
-$use-grid-whitespace-html-fix: false !default; // If you are not whitespace stripping your HTML then this will need to be enabled, you can disable it if you are.
-$use-list: true !default;
-$use-flag: true !default;
+$ea-use-grid: true !default;
+/* If you are not whitespace stripping your HTML then this will need to be enabled, you can disable it if you are. */
+$ea-use-grid-whitespace-html-fix: false !default;
+$ea-use-list: true !default;
+$ea-use-flag: true !default;
 
 /* Layout */
-$spacing-unit: 1rem !default;
-$spacing-unit-xs: $spacing-unit * 0.25;
-$spacing-unit-sm: $spacing-unit * 0.5;
-$spacing-unit-lg: $spacing-unit * 2;
+$ea-spacing-unit: 1rem !default;
+$ea-spacing-unit-lg: $ea-spacing-unit * 2;
+$ea-spacing-unit-md: $ea-spacing-unit;
+$ea-spacing-unit-sm: $ea-spacing-unit * 0.5;
+$ea-spacing-unit-xs: $ea-spacing-unit * 0.25;
 
-$spacing-offsets: (
-  xs: $spacing-unit-xs,
-  sm: $spacing-unit-sm,
-  md: $spacing-unit,
-  lg: $spacing-unit-lg
+$ea-spacing-offsets: (
+  lg: $ea-spacing-unit-lg,
+  md: $ea-spacing-unit-md,
+  sm: $ea-spacing-unit-sm,
+  xs: $ea-spacing-unit-xs
 ) !default;
 
-$breakpoints: (
-  xs: 460px,
-  sm: 720px,
+$ea-breakpoints: (
+  lg: 1200px,
   md: 960px,
-  lg: 1200px
+  sm: 720px,
+  xs: 460px
 ) !default;
 
-$content-width: 960px !default;
+$ea-content-width: 960px !default;
+
+/* Font */
+$ea-font-family-base: arial !default;
+$ea-font-family-brand: Helvetica Neue, Calibri Light, Roboto, sans-serif !default;
+$ea-font-size-default: 16px !default;
+
+$ea-font-size-breakpoint-multipliers: (
+  xs: 0.8,
+  sm: 0.9,
+  md: 1,
+  lg: 1
+) !default;
+
+$ea-font-size-element-multipliers: (
+  h1: 2.4,
+  h2: 2,
+  h3: 1.8,
+  h4: 1.5,
+  h5: 1.2,
+  h6: 1,
+  def: 1
+) !default;
+
+/* Spacing */
+$ea-letter-spacing: 0.02em !default;
+$ea-line-height: 1.5 !default;

@@ -1,0 +1,13 @@
+html,
+body {
+  @include ea-font('def');
+  line-height: $ea-line-height;
+}
+
+small {
+  font-size: 80%;
+}
+
+strong {
+  font-weight: 600;
+}

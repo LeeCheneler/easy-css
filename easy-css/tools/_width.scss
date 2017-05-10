@@ -1,7 +1,0 @@
-@mixin width($numerator, $denominator) {
-  width: (100% / $denominator) * $numerator;
-
-  @include generate-all-breakpoints {
-    width: (100% / $denominator) * $numerator;
-  }
-}
