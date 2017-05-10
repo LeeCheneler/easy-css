@@ -1,0 +1,46 @@
+@if $ea-use-flag {
+  .ea-o-flag {
+    display: table;
+    width: 100%;
+  }
+
+  @each $breakpoint in map-keys($ea-breakpoints) {
+    @include ea-respond-to('#{$breakpoint}') {
+      .ea-o-flag\@#{$breakpoint} {
+        display: table;
+        width: 100%;
+      }
+
+      .ea-o-flag\@#{$breakpoint} > .ea-o-flag__component,
+      .ea-o-flag\@#{$breakpoint} > .ea-o-flag__body {
+        display: table-cell;
+      }
+    }
+  }
+
+  :not([class^='ea-o-flag\@']) > .ea-o-flag__component,
+  :not([class^='ea-o-flag\@']) > .ea-o-flag__body {
+    display: table-cell;
+  }
+
+  .ea-o-flag__component,
+  .ea-o-flag__body {
+    vertical-align: middle;
+  }
+
+  .ea-o-flag__body {
+    width: 100%;
+  }
+
+  .ea-o-flag--align-top {
+    vertical-align: top;
+  }
+
+  .ea-o-flag--align-bottom {
+    vertical-align: bottom;
+  }
+
+  .ea-o-flag--no-wrap {
+    white-space: nowrap;
+  }
+}

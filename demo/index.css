@@ -523,6 +523,62 @@ body {
   background: #09f;
   color: #fff; }
 
+.ea-o-flag {
+  display: table;
+  width: 100%; }
+
+@media (min-width: 1200px) {
+  .ea-o-flag\@lg {
+    display: table;
+    width: 100%; }
+  .ea-o-flag\@lg > .ea-o-flag__component,
+  .ea-o-flag\@lg > .ea-o-flag__body {
+    display: table-cell; } }
+
+@media (min-width: 960px) {
+  .ea-o-flag\@md {
+    display: table;
+    width: 100%; }
+  .ea-o-flag\@md > .ea-o-flag__component,
+  .ea-o-flag\@md > .ea-o-flag__body {
+    display: table-cell; } }
+
+@media (min-width: 720px) {
+  .ea-o-flag\@sm {
+    display: table;
+    width: 100%; }
+  .ea-o-flag\@sm > .ea-o-flag__component,
+  .ea-o-flag\@sm > .ea-o-flag__body {
+    display: table-cell; } }
+
+@media (min-width: 460px) {
+  .ea-o-flag\@xs {
+    display: table;
+    width: 100%; }
+  .ea-o-flag\@xs > .ea-o-flag__component,
+  .ea-o-flag\@xs > .ea-o-flag__body {
+    display: table-cell; } }
+
+:not([class^='ea-o-flag@']) > .ea-o-flag__component,
+:not([class^='ea-o-flag@']) > .ea-o-flag__body {
+  display: table-cell; }
+
+.ea-o-flag__component,
+.ea-o-flag__body {
+  vertical-align: middle; }
+
+.ea-o-flag__body {
+  width: 100%; }
+
+.ea-o-flag--align-top {
+  vertical-align: top; }
+
+.ea-o-flag--align-bottom {
+  vertical-align: bottom; }
+
+.ea-o-flag--no-wrap {
+  white-space: nowrap; }
+
 .ea-o-grid {
   vertical-align: top;
   min-width: 100%;
