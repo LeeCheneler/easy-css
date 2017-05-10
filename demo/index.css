@@ -523,6 +523,52 @@ body {
   background: #09f;
   color: #fff; }
 
+.ea-o-grid {
+  vertical-align: top;
+  min-width: 100%;
+  font-size: 0; }
+
+.ea-o-grid--gutter {
+  margin-left: -1rem; }
+
+.ea-o-grid--gutter > .ea-o-grid__item {
+  padding-left: 1rem; }
+
+.ea-o-grid--trench {
+  margin-top: -1rem; }
+
+.ea-o-grid--trench > .ea-o-grid__item {
+  padding-top: 1rem; }
+
+.ea-o-grid--align-top {
+  vertical-align: top; }
+
+.ea-o-grid--align-center {
+  vertical-align: middle; }
+
+.ea-o-grid--align-bottom {
+  vertical-align: bottom; }
+
+.ea-o-grid--match-height {
+  display: flex;
+  flex-wrap: wrap; }
+
+.ea-o-grid--match-height > .ea-o-grid__item {
+  display: flex; }
+
+/*
+      [1]Set min-height to 1px to prevent the div was collapsing when no content withing (can use empty grid items to space things out
+      [2] Combination of negative left margin and font size "hacks" to overcome inline-blck whitespacing issues. Because of global border-box box sizing this doesn't affect layout
+  */
+.ea-o-grid__item {
+  position: relative;
+  vertical-align: inherit;
+  display: inline-block;
+  min-height: 1px;
+  width: 100%;
+  margin-left: -1px;
+  font-size: 16px; }
+
 .u-display-inline {
   display: inline; }
 
@@ -537,3 +583,168 @@ body {
 
 .u-text-align-right {
   text-align: right; }
+
+.u-1\/1 {
+  width: 100%; }
+
+.u-1\/2 {
+  width: 50%; }
+
+.u-2\/2 {
+  width: 100%; }
+
+.u-1\/3 {
+  width: 33.33333%; }
+
+.u-2\/3 {
+  width: 66.66667%; }
+
+.u-3\/3 {
+  width: 100%; }
+
+.u-1\/4 {
+  width: 25%; }
+
+.u-2\/4 {
+  width: 50%; }
+
+.u-3\/4 {
+  width: 75%; }
+
+.u-4\/4 {
+  width: 100%; }
+
+.u-1\/5 {
+  width: 20%; }
+
+.u-2\/5 {
+  width: 40%; }
+
+.u-3\/5 {
+  width: 60%; }
+
+.u-4\/5 {
+  width: 80%; }
+
+.u-5\/5 {
+  width: 100%; }
+
+.u-1\/6 {
+  width: 16.66667%; }
+
+.u-2\/6 {
+  width: 33.33333%; }
+
+.u-3\/6 {
+  width: 50%; }
+
+.u-4\/6 {
+  width: 66.66667%; }
+
+.u-5\/6 {
+  width: 83.33333%; }
+
+.u-6\/6 {
+  width: 100%; }
+
+.u-1\/7 {
+  width: 14.28571%; }
+
+.u-2\/7 {
+  width: 28.57143%; }
+
+.u-3\/7 {
+  width: 42.85714%; }
+
+.u-4\/7 {
+  width: 57.14286%; }
+
+.u-5\/7 {
+  width: 71.42857%; }
+
+.u-6\/7 {
+  width: 85.71429%; }
+
+.u-7\/7 {
+  width: 100%; }
+
+.u-1\/8 {
+  width: 12.5%; }
+
+.u-2\/8 {
+  width: 25%; }
+
+.u-3\/8 {
+  width: 37.5%; }
+
+.u-4\/8 {
+  width: 50%; }
+
+.u-5\/8 {
+  width: 62.5%; }
+
+.u-6\/8 {
+  width: 75%; }
+
+.u-7\/8 {
+  width: 87.5%; }
+
+.u-8\/8 {
+  width: 100%; }
+
+.u-1\/9 {
+  width: 11.11111%; }
+
+.u-2\/9 {
+  width: 22.22222%; }
+
+.u-3\/9 {
+  width: 33.33333%; }
+
+.u-4\/9 {
+  width: 44.44444%; }
+
+.u-5\/9 {
+  width: 55.55556%; }
+
+.u-6\/9 {
+  width: 66.66667%; }
+
+.u-7\/9 {
+  width: 77.77778%; }
+
+.u-8\/9 {
+  width: 88.88889%; }
+
+.u-9\/9 {
+  width: 100%; }
+
+.u-1\/10 {
+  width: 10%; }
+
+.u-2\/10 {
+  width: 20%; }
+
+.u-3\/10 {
+  width: 30%; }
+
+.u-4\/10 {
+  width: 40%; }
+
+.u-5\/10 {
+  width: 50%; }
+
+.u-6\/10 {
+  width: 60%; }
+
+.u-7\/10 {
+  width: 70%; }
+
+.u-8\/10 {
+  width: 80%; }
+
+.u-9\/10 {
+  width: 90%; }
+
+.u-10\/10 {
+  width: 100%; }

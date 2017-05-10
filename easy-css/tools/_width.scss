@@ -1,0 +1,7 @@
+@mixin ea-generate-width-fraction-classes($denominator) {
+  @for $numerator from 1 through $denominator {
+    .u-#{$numerator}\/#{$denominator} {
+      width: $numerator / $denominator * 100%;
+    }
+  }
+}
