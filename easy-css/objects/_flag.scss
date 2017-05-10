@@ -16,6 +16,18 @@
         display: table-cell;
       }
     }
+
+    @include ea-respond-to('max-#{$breakpoint}') {
+      .ea-o-flag\@max-#{$breakpoint} {
+        display: table;
+        width: 100%;
+      }
+
+      .ea-o-flag\@max-#{$breakpoint} > .ea-o-flag__component,
+      .ea-o-flag\@max-#{$breakpoint} > .ea-o-flag__body {
+        display: table-cell;
+      }
+    }
   }
 
   :not([class^='ea-o-flag\@']) > .ea-o-flag__component,
