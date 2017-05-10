@@ -1,0 +1,29 @@
+@if $ea-use-list {
+  .ea-o-list {
+    /* Strip default list styling */
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  .ea-o-list--inline > .ea-o-list__item {
+    display: inline-block;
+  }
+
+  .ea-o-list--trench {
+    margin-top: -$ea-spacing-unit;
+  }
+
+  .ea-o-list--trench > .ea-o-list__item {
+    padding-top: $ea-spacing-unit;
+  }
+
+  .ea-o-list--gutter {
+    margin-left: -$ea-spacing-unit;
+  }
+
+  .ea-o-list--gutter > .ea-o-list__item {
+    padding-left: $ea-spacing-unit;
+  }
+}

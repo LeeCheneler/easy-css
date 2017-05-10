@@ -569,6 +569,27 @@ body {
   margin-left: -1px;
   font-size: 16px; }
 
+.ea-o-list {
+  /* Strip default list styling */
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.ea-o-list--inline > .ea-o-list__item {
+  display: inline-block; }
+
+.ea-o-list--trench {
+  margin-top: -1rem; }
+
+.ea-o-list--trench > .ea-o-list__item {
+  padding-top: 1rem; }
+
+.ea-o-list--gutter {
+  margin-left: -1rem; }
+
+.ea-o-list--gutter > .ea-o-list__item {
+  padding-left: 1rem; }
+
 .u-display-inline {
   display: inline; }
 
