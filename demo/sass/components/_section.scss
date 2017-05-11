@@ -1,0 +1,6 @@
+.c-section {
+  padding: $ea-spacing-unit;
+  max-width: map-get($ea-breakpoints, 'md');
+  margin-left: auto;
+  margin-right: auto;
+}

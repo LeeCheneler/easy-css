@@ -523,6 +523,12 @@ body {
   background: #09f;
   color: #fff; }
 
+.c-section {
+  padding: 1rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .ea-o-flag {
   display: table;
   width: 100%; }
