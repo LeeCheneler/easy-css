@@ -12,8 +12,7 @@
     "stylelint-selector-bem-pattern": "^1.0.0"
   },
   "scripts": {
-    "build": "npm run build-basic && npm run autoprefix && npm run clean",
-    "build-basic": "node-sass ./demo/sass/main.scss demo/index.css",
+    "build": "node-sass ./demo/sass/main.scss demo/index.css && npm run autoprefix && npm run clean",
     "watch": "npm run build && node-sass ./demo/sass/main.scss demo/index.css -w",
     "lint": "stylelint \"*/**/*.scss\" --syntax scss",
     "autoprefix": "postcss -u autoprefixer -r ./demo/index.css",

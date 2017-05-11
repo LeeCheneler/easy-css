@@ -17,16 +17,9 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
 @each $breakpoint in $reverse-breakpoint-keys {
   @include ea-respond-to('#{$breakpoint}') {
     $extension: \@#{$breakpoint};
-    @include ea-generate-width-fraction-classes(1, $extension);
-    @include ea-generate-width-fraction-classes(2, $extension);
-    @include ea-generate-width-fraction-classes(3, $extension);
-    @include ea-generate-width-fraction-classes(4, $extension);
-    @include ea-generate-width-fraction-classes(5, $extension);
-    @include ea-generate-width-fraction-classes(6, $extension);
-    @include ea-generate-width-fraction-classes(7, $extension);
-    @include ea-generate-width-fraction-classes(8, $extension);
-    @include ea-generate-width-fraction-classes(9, $extension);
-    @include ea-generate-width-fraction-classes(10, $extension);
+    @for $i from 1 through 10 {
+      @include ea-generate-width-fraction-classes($i, $extension);
+    }
   }
 }
 
@@ -34,15 +27,8 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
 @each $breakpoint in $breakpoint-keys {
   @include ea-respond-to('max-#{$breakpoint}') {
     $extension: \@max-#{$breakpoint};
-    @include ea-generate-width-fraction-classes(1, $extension);
-    @include ea-generate-width-fraction-classes(2, $extension);
-    @include ea-generate-width-fraction-classes(3, $extension);
-    @include ea-generate-width-fraction-classes(4, $extension);
-    @include ea-generate-width-fraction-classes(5, $extension);
-    @include ea-generate-width-fraction-classes(6, $extension);
-    @include ea-generate-width-fraction-classes(7, $extension);
-    @include ea-generate-width-fraction-classes(8, $extension);
-    @include ea-generate-width-fraction-classes(9, $extension);
-    @include ea-generate-width-fraction-classes(10, $extension);
+    @for $i from 1 through 10 {
+      @include ea-generate-width-fraction-classes($i, $extension);
+    }
   }
 }

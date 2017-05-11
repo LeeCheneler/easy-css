@@ -1,0 +1,31 @@
+@mixin generate-soft-classes($extension: '') {
+  .ea-u-soft#{$extension} {
+    padding: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-left#{$extension} {
+    padding-left: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-right#{$extension} {
+    padding-right: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-top#{$extension} {
+    padding-top: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-bottom#{$extension} {
+    padding-bottom: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-ends#{$extension} {
+    padding-top: $ea-spacing-unit !important;
+    padding-bottom: $ea-spacing-unit !important;
+  }
+
+  .ea-u-soft-sides#{$extension} {
+    padding-left: $ea-spacing-unit !important;
+    padding-right: $ea-spacing-unit !important;
+  }
+}
