@@ -4,7 +4,11 @@
     width: 100%;
   }
 
-  @each $breakpoint in map-keys($ea-breakpoints) {
+  $breakpoint-keys: map-keys($ea-breakpoints);
+  $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
+
+  /* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
+  @each $breakpoint in $reverse-breakpoint-keys {
     @include ea-respond-to('#{$breakpoint}') {
       .ea-o-flag\@#{$breakpoint} {
         display: table;
@@ -16,7 +20,10 @@
         display: table-cell;
       }
     }
+  }
 
+  /* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
+  @each $breakpoint in $breakpoint-keys {
     @include ea-respond-to('max-#{$breakpoint}') {
       .ea-o-flag\@max-#{$breakpoint} {
         display: table;
