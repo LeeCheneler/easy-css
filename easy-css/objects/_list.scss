@@ -1,31 +1,29 @@
-@if $use-list {
-  .o-list {
-    @include undo-default-list-style;
+@if $ea-use-list {
+  .ea-o-list {
+    /* Strip default list styling */
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
   }
 
-  .o-list--inline > .o-list__item {
+  .ea-o-list--inline > .ea-o-list__item {
     display: inline-block;
   }
 
-  .o-list--trench {
-    margin-top: -$spacing-unit;
-    @include generate-inverted-offsets('margin-top');
+  .ea-o-list--trench {
+    margin-top: -$ea-spacing-unit;
   }
 
-  .o-list--trench > .o-list__item {
-    padding-top: $spacing-unit;
-  }
-  
-  @include generate-list-item-offsets('trench', 'padding-top');
-
-  .o-list--gutter {
-    margin-left: -$spacing-unit;
-    @include generate-inverted-offsets('margin-left');
+  .ea-o-list--trench > .ea-o-list__item {
+    padding-top: $ea-spacing-unit;
   }
 
-  .o-list--gutter > .o-list__item {
-    padding-left: $spacing-unit;
+  .ea-o-list--gutter {
+    margin-left: -$ea-spacing-unit;
   }
-  
-  @include generate-list-item-offsets('gutter', 'padding-left');
+
+  .ea-o-list--gutter > .ea-o-list__item {
+    padding-left: $ea-spacing-unit;
+  }
 }

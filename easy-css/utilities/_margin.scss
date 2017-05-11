@@ -1,68 +1,51 @@
-/* Add margin */
-.u-push {
-  margin: $spacing-unit !important;
-  @include generate-offsets('margin');
+@include generate-push-classes();
+
+$breakpoint-keys: map-keys($ea-breakpoints);
+$reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
+
+/* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
+@each $breakpoint in $reverse-breakpoint-keys {
+  @include ea-respond-to('#{$breakpoint}') {
+    $extension: \@#{$breakpoint};
+    @include generate-push-classes($extension);
+  }
 }
 
-.u-push-left {
-  margin-left: $spacing-unit !important;
-  @include generate-offsets('margin-left');
+/* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
+@each $breakpoint in $breakpoint-keys {
+  @include ea-respond-to('max-#{$breakpoint}') {
+    $extension: \@max-#{$breakpoint};
+    @include generate-push-classes($extension);
+  }
 }
 
-.u-push-top {
-  margin-top: $spacing-unit !important;
-  @include generate-offsets('margin-top');
-}
-
-.u-push-right {
-  margin-right: $spacing-unit !important;
-  @include generate-offsets('margin-right');
-}
-
-.u-push-bottom {
-  margin-bottom: $spacing-unit !important;
-  @include generate-offsets('margin-bottom');
-}
-
-.u-push-sides {
-  margin-left: $spacing-unit !important;
-  margin-right: $spacing-unit !important;
-  @include generate-offsets('margin-left', 'margin-right');
-}
-
-.u-push-ends {
-  margin-top: $spacing-unit !important;
-  margin-bottom: $spacing-unit !important;
-  @include generate-offsets('margin-top', 'margin-bottom');
-}
-
-/* Remove margin */
-.u-flush {
+/* Remove margin classes */
+.ea-u-flush {
   margin: 0 !important;
 }
 
-.u-flush-left {
+.ea-u-flush-left {
   margin-left: 0 !important;
 }
 
-.u-flush-top {
-  margin-top: 0 !important;
-}
-
-.u-flush-right {
+.ea-u-flush-right {
   margin-right: 0 !important;
 }
 
-.u-flush-bottom {
+.ea-u-flush-top {
+  margin-top: 0 !important;
+}
+
+.ea-u-flush-bottom {
   margin-bottom: 0 !important;
 }
 
-.u-flush-sides {
+.ea-u-flush-ends {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.ea-u-hard-ends {
   margin-left: 0 !important;
   margin-right: 0 !important;
-}
-
-.u-flush-ends {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
 }

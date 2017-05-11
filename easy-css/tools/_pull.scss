@@ -1,7 +1,7 @@
-@mixin pull($numerator, $denominator) {
-  left: -(100% / $denominator) * $numerator;
-
-  @include generate-all-breakpoints {
-    left: -(100% / $denominator) * $numerator;
+@mixin ea-generate-pull-fraction-classes($denominator, $extension: '') {
+  @for $numerator from 1 through $denominator {
+    .ea-u-pull-#{$numerator}\/#{$denominator}#{$extension} {
+      left: -$numerator / $denominator * 100%;
+    }
   }
 }

@@ -1,68 +1,51 @@
-/* Add padding */
-.u-soft {
-  padding: $spacing-unit !important;
-  @include generate-offsets('padding');
+@include generate-soft-classes();
+
+$breakpoint-keys: map-keys($ea-breakpoints);
+$reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
+
+/* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
+@each $breakpoint in $reverse-breakpoint-keys {
+  @include ea-respond-to('#{$breakpoint}') {
+    $extension: \@#{$breakpoint};
+    @include generate-soft-classes($extension);
+  }
 }
 
-.u-soft-left {
-  padding-left: $spacing-unit !important;
-  @include generate-offsets('padding-left');
+/* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
+@each $breakpoint in $breakpoint-keys {
+  @include ea-respond-to('max-#{$breakpoint}') {
+    $extension: \@max-#{$breakpoint};
+    @include generate-soft-classes($extension);
+  }
 }
 
-.u-soft-top {
-  padding-top: $spacing-unit !important;
-  @include generate-offsets('padding-top');
-}
-
-.u-soft-right {
-  padding-right: $spacing-unit !important;
-  @include generate-offsets('padding-right');
-}
-
-.u-soft-bottom {
-  padding-bottom: $spacing-unit !important;
-  @include generate-offsets('padding-bottom');
-}
-
-.u-soft-sides {
-  padding-left: $spacing-unit !important;
-  padding-right: $spacing-unit !important;
-  @include generate-offsets('padding-left', 'padding-right');
-}
-
-.u-soft-ends {
-  padding-top: $spacing-unit !important;
-  padding-bottom: $spacing-unit !important;
-  @include generate-offsets('padding-top', 'padding-bottom');
-}
-
-/* Remove padding */
-.u-hard {
+/* Remove padding classes */
+.ea-u-hard {
   padding: 0 !important;
 }
 
-.u-hard-left {
+.ea-u-hard-left {
   padding-left: 0 !important;
 }
 
-.u-hard-top {
-  padding-top: 0 !important;
-}
-
-.u-hard-right {
+.ea-u-hard-right {
   padding-right: 0 !important;
 }
 
-.u-hard-bottom {
+.ea-u-hard-top {
+  padding-top: 0 !important;
+}
+
+.ea-u-hard-bottom {
   padding-bottom: 0 !important;
 }
 
-.u-hard-sides {
+.ea-u-hard-ends {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ea-u-hard-ends {
   padding-left: 0 !important;
   padding-right: 0 !important;
-}
-
-.u-hard-ends {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }

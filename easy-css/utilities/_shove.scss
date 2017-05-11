@@ -1,6 +1,6 @@
-/* Generate non responsive widths first, responsive widths have more weight */
+/* Generate non responsive shoves first, responsive widths have more weight */
 @for $i from 1 through 10 {
-  @include ea-generate-width-fraction-classes($i);
+  @include ea-generate-shove-fraction-classes($i);
 }
 
 $breakpoint-keys: map-keys($ea-breakpoints);
@@ -11,7 +11,7 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
   @include ea-respond-to('#{$breakpoint}') {
     $extension: \@#{$breakpoint};
     @for $i from 1 through 10 {
-      @include ea-generate-width-fraction-classes($i, $extension);
+      @include ea-generate-shove-fraction-classes($i, $extension);
     }
   }
 }
@@ -21,7 +21,7 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
   @include ea-respond-to('max-#{$breakpoint}') {
     $extension: \@max-#{$breakpoint};
     @for $i from 1 through 10 {
-      @include ea-generate-width-fraction-classes($i, $extension);
+      @include ea-generate-shove-fraction-classes($i, $extension);
     }
   }
 }

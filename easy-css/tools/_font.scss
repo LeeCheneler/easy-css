@@ -1,0 +1,6 @@
+/* Rem based font sizing */
+@mixin ea-font($element-key, $font-family: $ea-font-family-base) {
+  $multiplier: map-get($ea-font-size-element-multipliers, $element-key);
+  font-size: 1rem * $multiplier;
+  font-family: $font-family;
+}

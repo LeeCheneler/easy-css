@@ -1,0 +1,31 @@
+@mixin generate-push-classes($extension: '') {
+  .ea-u-push#{$extension} {
+    margin: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-left#{$extension} {
+    margin-left: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-right#{$extension} {
+    margin-right: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-top#{$extension} {
+    margin-top: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-bottom#{$extension} {
+    margin-bottom: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-ends#{$extension} {
+    margin-top: $ea-spacing-unit !important;
+    margin-bottom: $ea-spacing-unit !important;
+  }
+
+  .ea-u-push-sides#{$extension} {
+    margin-left: $ea-spacing-unit !important;
+    margin-right: $ea-spacing-unit !important;
+  }
+}

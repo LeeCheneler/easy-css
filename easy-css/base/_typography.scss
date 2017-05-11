@@ -1,45 +1,69 @@
+/* Base site font size set in px.
+ * All other font sizes will be rem based from this.
+ */
+@each $breakpoint in map-keys($ea-font-size-breakpoint-multipliers) {
+  @include ea-respond-to($breakpoint) {
+    html {
+      $breakpoint-multiplier: map-get($ea-font-size-breakpoint-multipliers, $breakpoint);
+      font-size: $ea-font-size-default * $breakpoint-multiplier;
+    }
+  }
+}
+
+html {
+  @include ea-respond-to('max-xs') {
+    $breakpoint-multiplier: map-get($ea-font-size-breakpoint-multipliers, 'xs');
+    font-size: $ea-font-size-default * $breakpoint-multiplier;
+  }
+}
+
+html {
+  font-family: $ea-font-family-base;
+}
+
+/* Set header font sizes - these will be relative to html */
 h1 {
-  @include use-font($font-family-brand, get-font-sizes('h1'));
+  @include ea-font('h1', $ea-font-family-brand);
 }
 
 h2 {
-  @include use-font($font-family-brand, get-font-sizes('h2'));
+  @include ea-font('h2', $ea-font-family-brand);
 }
 
-h3 {
-  @include use-font($font-family-brand, get-font-sizes('h3'));
+h3{
+  @include ea-font('h3', $ea-font-family-brand);
 }
 
 h4 {
-  @include use-font($font-family-brand, get-font-sizes('h4'));
+  @include ea-font('h4', $ea-font-family-brand);
 }
 
-h5 {
-  @include use-font($font-family-brand, get-font-sizes('h5'));
+h5{
+  @include ea-font('h5', $ea-font-family-brand);
 }
 
 h6 {
-  @include use-font($font-family-brand, get-font-sizes('h6'));
+  @include ea-font('h6', $ea-font-family-brand);
 }
 
-h1 {
-  margin-top: $spacing-unit-lg;
-  margin-bottom: $spacing-unit-lg;
-}
-
-h2 {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
-}
-
+/* Consistent vertical spacing for block elements */
+h1,
+h2,
 h3,
-h4 {
-  margin-top: $spacing-unit-sm;
-  margin-bottom: $spacing-unit-sm;
-}
-
+h4,
 h5,
-h6 {
-  margin-top: $spacing-unit-xs;
-  margin-bottom: $spacing-unit-xs;
+h6,
+hgroup,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+legend,
+figure,
+pre,
+hr {
+  margin-bottom: $ea-spacing-unit;
 }

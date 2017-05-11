@@ -1,7 +1,7 @@
-@mixin width($numerator, $denominator) {
-  width: (100% / $denominator) * $numerator;
-
-  @include generate-all-breakpoints {
-    width: (100% / $denominator) * $numerator;
+@mixin ea-generate-width-fraction-classes($denominator, $extension: '') {
+  @for $numerator from 1 through $denominator {
+    .ea-u-#{$numerator}\/#{$denominator}#{$extension} {
+      width: $numerator / $denominator * 100%;
+    }
   }
 }
