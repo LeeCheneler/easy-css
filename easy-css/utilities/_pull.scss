@@ -1,0 +1,27 @@
+/* Generate non responsive pulls first, responsive widths have more weight */
+@for $i from 1 through 10 {
+  @include ea-generate-pull-fraction-classes($i);
+}
+
+$breakpoint-keys: map-keys($ea-breakpoints);
+$reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
+
+/* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
+@each $breakpoint in $reverse-breakpoint-keys {
+  @include ea-respond-to('#{$breakpoint}') {
+    $extension: \@#{$breakpoint};
+    @for $i from 1 through 10 {
+      @include ea-generate-pull-fraction-classes($i, $extension);
+    }
+  }
+}
+
+/* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
+@each $breakpoint in $breakpoint-keys {
+  @include ea-respond-to('max-#{$breakpoint}') {
+    $extension: \@max-#{$breakpoint};
+    @for $i from 1 through 10 {
+      @include ea-generate-pull-fraction-classes($i, $extension);
+    }
+  }
+}

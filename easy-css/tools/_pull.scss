@@ -1,0 +1,7 @@
+@mixin ea-generate-pull-fraction-classes($denominator, $extension: '') {
+  @for $numerator from 1 through $denominator {
+    .ea-u-pull-#{$numerator}\/#{$denominator}#{$extension} {
+      left: -$numerator / $denominator * 100%;
+    }
+  }
+}
