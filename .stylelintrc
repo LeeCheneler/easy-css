@@ -1,32 +1,37 @@
 {
-  "extends": "stylelint-config-sass-guidelines",
-  "ignoreFiles": [
-    "easy-css/resets/_normalize.scss"
-  ],
-  "plugins": [
-    "stylelint-scss",
-    "stylelint-selector-bem-pattern"
-  ],
-  "rules": {
-    "max-nesting-depth": [ 1, {
-      ignore: ["at-rules-without-declaration-blocks"],
-      ignoreAtRules: ["/^include$/", "/^if$/", "/^each$/"]
-    }],
-    "selector-class-pattern": "",
-    "declaration-block-properties-order": [],
-    "selector-no-qualifying-type": [ true, {
-      "ignore": ["attribute"]
-    }],
-    "scss/selector-no-redundant-nesting-selector": true,
-    "scss/at-extend-no-missing-placeholder": true,
-    "scss/dollar-variable-no-missing-interpolation": true,
-    "scss/at-mixin-argumentless-call-parentheses": "never",
-    "plugin/selector-bem-pattern": {
-      "preset": "bem",
-      "componentName": "(([a-z0-9]+(?!-$)-?)+)",
-      "componentSelectors": {
-        "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
-      }
+    "extends": "stylelint-config-sass-guidelines",
+    "ignoreFiles": [
+      "easy-css/resets/_normalize.scss"
+    ],
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss",
+        "stylelint-selector-bem-pattern"
+    ],
+    "rules": {
+        "order/properties-alphabetical-order": null,
+        "indentation": [2],
+        "property-no-vendor-prefix": null,
+        "value-no-vendor-prefix": null,
+        "at-rule-no-vendor-prefix": null,
+        "max-nesting-depth": [ 1, {
+            ignore: ["blockless-at-rules"],
+            ignoreAtRules: ["/^include$/", "/^if$/", "/^each$/"]
+        }],
+        "selector-class-pattern": "",
+        "selector-no-qualifying-type": [ true, {
+            "ignore": ["attribute"]
+        }],
+        "scss/selector-no-redundant-nesting-selector": true,
+        "scss/at-extend-no-missing-placeholder": true,
+        "scss/dollar-variable-no-missing-interpolation": true,
+        "scss/at-mixin-argumentless-call-parentheses": "never",
+        "plugin/selector-bem-pattern": {
+            "preset": "bem",
+            "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+            "componentSelectors": {
+                "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
+            }
+        }
     }
-  }
 }
