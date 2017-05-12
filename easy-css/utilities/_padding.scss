@@ -1,4 +1,4 @@
-@include generate-soft-classes();
+@include generate-soft-classes;
 
 $breakpoint-keys: map-keys($ea-breakpoints);
 $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);

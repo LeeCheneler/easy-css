@@ -2,7 +2,7 @@
   $reverse: ();
 
   @each $value in $list {
-    $reverse: join(($value), $reverse)
+    $reverse: join(($value), $reverse);
   }
 
   @return $reverse;
