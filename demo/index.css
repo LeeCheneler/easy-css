@@ -429,29 +429,23 @@ dd {
 
 /* Consistent vertical spacing for block elements */
 /* [1] Remove margin vertical spacing as framework box sizes everything so padding is safer */
+p
+hr {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-hgroup,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-legend,
-figure,
-pre,
-hr {
+h6 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 1rem;
+  padding-top: 1em;
   padding-bottom: 1rem; }
 
+/* Need to reset hr style due to using padding instead of margin */
 hr {
   border: 0;
   border-top: inset 1px; }

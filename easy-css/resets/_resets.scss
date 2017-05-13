@@ -25,30 +25,25 @@ dd {
 
 /* Consistent vertical spacing for block elements */
 /* [1] Remove margin vertical spacing as framework box sizes everything so padding is safer */
+p
+hr {
+  padding-top: $ea-spacing-unit; // [1]
+  padding-bottom: $ea-spacing-unit; // [1]
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-hgroup,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-legend,
-figure,
-pre,
-hr {
+h6 {
   margin-top: 0; // [1]
   margin-bottom: 0; // [1]
-  padding-top: $ea-spacing-unit;
+  padding-top: 1em;
   padding-bottom: $ea-spacing-unit;
 }
 
+/* Need to reset hr style due to using padding instead of margin */
 hr {
   border: 0;
   border-top: inset 1px;
