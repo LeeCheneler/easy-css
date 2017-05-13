@@ -427,6 +427,35 @@ ol,
 dd {
   margin-left: 1rem; }
 
+/* Consistent vertical spacing for block elements */
+/* [1] Remove margin vertical spacing as framework box sizes everything so padding is safer */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+legend,
+figure,
+pre,
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+hr {
+  border: 0;
+  border-top: inset 1px; }
+
 html,
 body {
   font-size: 1rem;
@@ -489,31 +518,6 @@ h5 {
 h6 {
   font-size: 1rem;
   font-family: Helvetica Neue, Calibri Light, Roboto, sans-serif; }
-
-/* Consistent vertical spacing for block elements */
-/* [1] Remove margin vertical spacing as framework box sizes everything so padding is safer */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hgroup,
-ul,
-ol,
-dl,
-blockquote,
-p,
-address,
-table,
-legend,
-figure,
-pre,
-hr {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
 
 html,
 body {
