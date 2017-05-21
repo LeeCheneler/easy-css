@@ -18,23 +18,23 @@
       <p>Github: <a href="https://github.com/LeeCheneler/easy-css">https://github.com/LeeCheneler/easy-css</a></p>
       <p>npm: <a href="https://www.npmjs.com/package/easy-css">https://www.npmjs.com/package/easy-css</a></p>
       <nav>
-        <div class="ea-o-list ea-o-list--inline ea-o-list--gutter ea-o-list--trench">
-          <div class="ea-o-list__item">
+        <ul class="ea-o-list ea-o-list--bare ea-o-list--inline ea-o-list--gutter ea-o-list--trench">
+          <li class="ea-o-list__item">
             <h4><a href="#typography">Typography</a></h4>
-          </div>
-          <div class="ea-o-list__item">
+          </li>
+          <li class="ea-o-list__item">
             <h4><a href="#grid">Grid</a></h4>
-          </div>
-          <div class="ea-o-list__item">
+          </li>
+          <li class="ea-o-list__item">
             <h4><a href="#list">List</a></h4>
-          </div>
-          <div class="ea-o-list__item">
+          </li>
+          <li class="ea-o-list__item">
             <h4><a href="#flag">Flag</a></h4>
-          </div>
-          <div class="ea-o-list__item">
+          </li>
+          <li class="ea-o-list__item">
             <h4><a href="#utilities">Utilities</a></h4>
-          </div>
-        </div>
+          </li>
+        </ul>
       </nav>
       <p>Inspect the source of this page to see how to utilize the following features of the framework.</p>
     </header>
@@ -255,31 +255,43 @@
       <h2 class="ea-u-text-align-center">List</h2>
       <hr />
       <p>Very simple list, supports inline and uniform spacing.</p>
+      <h3>Basic list</h3>
+      <ul class="ea-o-list">
+        <li class="ea-o-list__item">one</li>
+        <li class="ea-o-list__item">two</li>
+        <li class="ea-o-list__item">three</li>
+      </ul>
+      <h3>Bare list</h3>
+      <ul class="ea-o-list ea-o-list--bare">
+        <li class="ea-o-list__item">one</li>
+        <li class="ea-o-list__item">two</li>
+        <li class="ea-o-list__item">three</li>
+      </ul>
       <h3>Trench</h3>
-      <div class="ea-o-list ea-o-list--trench">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--trench">
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <h3>Inline + gutter + trench</h3>
-      <div class="ea-o-list ea-o-list--trench ea-o-list--gutter ea-o-list--inline">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--trench ea-o-list--gutter ea-o-list--inline">
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card">List Item</div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <section id="flag" class="c-section">
@@ -387,130 +399,130 @@
       <div class="c-card ea-u-hidden-visually">Hidden visually</div>
 
       <h3>Padding</h3>
-      <div class="ea-o-list ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft">Soft</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-top">Soft top</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-right">Soft right</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-bottom">Soft bottom</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-left">Soft left</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-sides">Soft sides</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft-ends">Soft ends</div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <h3>Padding (responsive)</h3>
-      <div class="ea-o-list ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft@lg">Soft@lg</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft@md">Soft@md</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft@sm">Soft@sm</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-soft@xs">Soft@xs</div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <h3>Margin</h3>
-      <div class="ea-o-list ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push">Push</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-top">Push top</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-right">Push right</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-bottom">Push bottom</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-left">Push left</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-sides">Push sides</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push-ends">Push ends</div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <h3>Margin (responsive)</h3>
-      <div class="ea-o-list ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
-        <div class="ea-o-list__item">
+      <ul class="ea-o-list ea-o-list--bare ea-o-list--gutter ea-o-list--trench ea-o-list--inline">
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push@lg">Push@lg</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push@md">Push@md</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push@sm">Push@sm</div>
           </div>
-        </div>
-        <div class="ea-o-list__item">
+        </li>
+        <li class="ea-o-list__item">
           <div class="c-card ea-u-hard">
             <div class="ea-u-push@xs">Push@xs</div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   </body>
 
