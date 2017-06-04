@@ -29,3 +29,35 @@
     margin-right: $ea-spacing-unit !important;
   }
 }
+
+@mixin generate-flush-classes($extension: '') {
+  .ea-u-flush#{$extension} {
+    margin: 0 !important;
+  }
+
+  .ea-u-flush-left#{$extension} {
+    margin-left: 0 !important;
+  }
+
+  .ea-u-flush-right#{$extension} {
+    margin-right: 0 !important;
+  }
+
+  .ea-u-flush-top#{$extension} {
+    margin-top: 0 !important;
+  }
+
+  .ea-u-flush-bottom#{$extension} {
+    margin-bottom: 0 !important;
+  }
+
+  .ea-u-flush-ends#{$extension} {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .ea-u-flush-sides#{$extension} {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

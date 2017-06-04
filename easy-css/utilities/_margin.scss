@@ -8,6 +8,7 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
   @include ea-respond-to('#{$breakpoint}') {
     $extension: \@#{$breakpoint};
     @include generate-push-classes($extension);
+    @include generate-flush-classes($extension);
   }
 }
 
@@ -16,36 +17,6 @@ $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
   @include ea-respond-to('max-#{$breakpoint}') {
     $extension: \@max-#{$breakpoint};
     @include generate-push-classes($extension);
+    @include generate-flush-classes($extension);
   }
-}
-
-/* Remove margin classes */
-.ea-u-flush {
-  margin: 0 !important;
-}
-
-.ea-u-flush-left {
-  margin-left: 0 !important;
-}
-
-.ea-u-flush-right {
-  margin-right: 0 !important;
-}
-
-.ea-u-flush-top {
-  margin-top: 0 !important;
-}
-
-.ea-u-flush-bottom {
-  margin-bottom: 0 !important;
-}
-
-.ea-u-flush-ends {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.ea-u-hard-ends {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
 }

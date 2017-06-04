@@ -3,49 +3,20 @@
 $breakpoint-keys: map-keys($ea-breakpoints);
 $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
 
-/* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
+/* Need to render smaller screen size breakpoint classes first to ensure larger screen size breakpoint classes have higher specificity */
 @each $breakpoint in $reverse-breakpoint-keys {
   @include ea-respond-to('#{$breakpoint}') {
     $extension: \@#{$breakpoint};
     @include generate-soft-classes($extension);
+    @include generate-hard-classes($extension);
   }
 }
 
-/* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
+/* Need to render larger max-screen size breakpoint classes first to ensure smaller max-screen size breakpoint classes have higher specificity */
 @each $breakpoint in $breakpoint-keys {
   @include ea-respond-to('max-#{$breakpoint}') {
     $extension: \@max-#{$breakpoint};
     @include generate-soft-classes($extension);
+    @include generate-hard-classes($extension);
   }
-}
-
-/* Remove padding classes */
-.ea-u-hard {
-  padding: 0 !important;
-}
-
-.ea-u-hard-left {
-  padding-left: 0 !important;
-}
-
-.ea-u-hard-right {
-  padding-right: 0 !important;
-}
-
-.ea-u-hard-top {
-  padding-top: 0 !important;
-}
-
-.ea-u-hard-bottom {
-  padding-bottom: 0 !important;
-}
-
-.ea-u-hard-ends {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.ea-u-hard-ends {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
