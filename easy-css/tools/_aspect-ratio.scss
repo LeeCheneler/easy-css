@@ -1,0 +1,7 @@
+// Generates an aspect ratio class, for example: .u-16by9
+// This is very useful for maintaining image height whilst the image is loading so the page doesn't bounce
+@mixin aspect-ratio($width, $height) {
+  .u-#{$width}by#{$height} {
+    padding-top: ($height / $width) * 100%;
+  }
+}
