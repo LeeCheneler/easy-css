@@ -9,6 +9,31 @@
     display: inline-block;
   }
 
+  $breakpoint-keys: map-keys($ea-breakpoints);
+  $reverse-breakpoint-keys: ea-reverse-list($breakpoint-keys);
+
+  /* Need to render smaller screen size breakpoint classes first to ensure larger screen size breakpoint classes have higher specificity */
+  @each $breakpoint in $reverse-breakpoint-keys {
+    @include ea-respond-to('#{$breakpoint}') {
+      $extension: \@#{$breakpoint};
+
+      .ea-o-list--inline#{$extension} > .ea-o-list__item {
+        display: inline-block;
+      }
+    }
+  }
+
+  /* Need to render larger max-screen size breakpoint classes first to ensure smaller max-screen size breakpoint classes have higher specificity */
+  @each $breakpoint in $breakpoint-keys {
+    @include ea-respond-to('max-#{$breakpoint}') {
+      $extension: \@max-#{$breakpoint};
+
+      .ea-o-list--inline#{$extension} > .ea-o-list__item {
+        display: inline-block;
+      }
+    }
+  }
+
   .ea-o-list--trench {
     margin-top: -$ea-spacing-unit;
   }
