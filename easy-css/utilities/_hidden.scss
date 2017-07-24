@@ -2,6 +2,8 @@
   display: none !important;
 }
 
+// Visually hidden but still tabbable and accessible to screen readers etc
+// See https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 .ea-u-hidden-visually {
-  visibility: hidden !important;
+  @include visually-hidden(true);
 }
